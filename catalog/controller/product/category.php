@@ -158,8 +158,15 @@ class ControllerProductCategory extends Controller {
 					'filter_sub_category' => true
 				);
 
+                if ($result['image'] && !empty($result['image'])) {
+                    $thumb = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+                } else {
+                    $thumb = $this->model_tool_image->resize(DIR_IMAGE.'placeholder.png', $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+                }
+
 				$data['categories'][] = array(
 					'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+                    'thumb'=>$thumb,
 					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
 				);
 			}

@@ -56,18 +56,32 @@
         </div>
         <?php } else if ($categories) { ?>
           <div class="refine-search">
-            <h4><?php echo $heading_title; ?></h4>
+            <h4><?php echo $text_refine; ?></h4>
+            <?php if (count($categories) <= 20) { ?>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <?php foreach ($categories as $category) { ?>
-                        <div class="col-sm-3">
-                            <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-                        </div>
-                        <?php } ?>
-                    </div>
-                </div>
+              <div class="col-sm-12">
+                <ul class="list-inline">
+                  <?php foreach ($categories as $category) { ?>
+                  <li>
+                      <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+                  </li>
+                  <?php } ?>
+                </ul>
+              </div>
             </div>
+            <?php } else { ?>
+            <div class="row">
+              <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
+              <div class="col-sm-3">
+                <ul class="list-inline">
+                  <?php foreach ($categories as $category) { ?>
+                  <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+                  <?php } ?>
+                </ul>
+              </div>
+              <?php } ?>
+            </div>
+            <?php } ?>
          </div>    
       <?php } ?>
       <?php if ($products) { ?>

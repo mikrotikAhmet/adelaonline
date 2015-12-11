@@ -7,7 +7,7 @@
 				<?php echo $column_left; ?>
 			</aside>	
 		<?php endif; ?> 
-  
+
    <div id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content">
     <div class="content-inner">
     <?php echo $content_top; ?>
