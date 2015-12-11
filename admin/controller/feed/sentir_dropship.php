@@ -175,7 +175,6 @@ class ControllerFeedSentirDropship extends Controller {
 
         $json = array();
 
-
         $secret = md5(date('Y-m-d H:s:i'));
 
         $sentir_crypto = new SentirEncryption($secret);

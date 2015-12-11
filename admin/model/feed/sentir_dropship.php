@@ -31,6 +31,10 @@ class ModelFeedSentirDropship extends Model {
 				PRIMARY KEY (`product_id`)
 			) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 		");
+
+        mkdir(DIR_IMAGE . '/catalog/sentir', 0755);
+        chmod(DIR_IMAGE . '/catalog/sentir', 0755);
+//        chown(DIR_IMAGE . '/catalog/sentir','www-data:www-data');
     }
 
     public function uninstall() {
