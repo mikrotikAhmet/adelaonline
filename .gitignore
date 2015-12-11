@@ -10,3 +10,5 @@
 /admin/config.php
 /image
 /image/*
+/mysql
+/mysql/*
