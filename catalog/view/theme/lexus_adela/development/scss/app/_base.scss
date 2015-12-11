@@ -1,0 +1,27 @@
+
+div.required .control-label:before {
+    color: #f00;
+    content: "* ";
+    font-weight: bold;
+}
+
+.modal-open {
+  @include rtl-margin-right(13px);
+}
+
+.noborder {
+    border:none !important;
+	.box {
+		border: none !important;
+	}
+}
+
+//slider
+.full-slider{
+    padding-left: 0;
+    padding-right: 0;
+}
+.full-col [class*="col-"]{
+    padding-right:0;
+    padding-left:0;
+}

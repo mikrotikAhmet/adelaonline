@@ -1,0 +1,102 @@
+.#{$block-prefix}-highlighted {
+    border: $block-module-highlighted-border;   
+    .#{$block-heading-selector} {
+            background: $block-module-highlighted-bg;
+            color: $block-module-footer-heading-color   ; 
+    }
+    .#{$block-content-selector}{
+           
+    }
+}
+.nopadding{
+    .panel-body{
+        padding:0;
+    }
+}
+.block{
+    position: relative;
+    &:before{
+        background-color: $border-color;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+.sidebar{
+    .panel-default{
+        &.hightlight{
+            border:2px solid $border-color;
+            .panel-heading{
+                border-top:0 !important;
+                @include rtl-padding-left(25px);
+                &:after{
+                    content: none;
+                }
+            }
+            &:before{
+                background: #ff3300 none repeat scroll 0 0;
+                content: "";
+                height: 4px;
+                @include rtl-left(-2px);
+                position: absolute;
+                top: -2px;
+                width: 102%;
+            }
+        }
+    }
+    .panel-body{
+        padding:0;
+    }
+    .panel{
+        .list-group{
+            box-shadow:none;
+            margin: 0;
+        }
+        .panel-heading{            
+            .panel-title{
+            }
+        }
+        .list-group{
+            .list-group-item{
+                border-width:1px 0;
+                padding:14px 25px;
+                &:last-child{
+                    border-bottom:0;
+                }
+            }
+        }
+    }
+    .nopadding{
+        .panel-body{
+            padding:0;
+        }
+    }
+    &.noborder{
+        .panel{
+            .panel-heading{
+                border-bottom:0;
+                padding-bottom:0;
+            }
+        }
+    }
+}
+.nostylingboxs{
+    .#{$block-selector} {
+        border:none;
+        background:none;
+        box-shadow:none;
+    }
+    .#{$block-heading-selector} {
+       background-color: transparent;
+        padding-left:0;
+        padding-right:0
+    }
+    .#{$block-content-selector} {
+        background-color: transparent;
+        padding-left:0;
+        padding-right:0
+    }
+}

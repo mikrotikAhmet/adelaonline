@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<themeeditor>
+	<author>pavotheme</author>
+	<name>Live Theme Editor</name>	
+	<layout>
+		<item>
+		   <label>Layout Header</label>
+		   <block>header</block>
+		   <default>version-1</default>
+		   <option>
+		    <text>Header V1</text>
+		    <value>version-1</value>
+		   </option> 
+		   <option>
+		    <text>Header V2</text>
+		    <value>version-2</value>
+		   </option>
+		   <option>
+		    <text>Header V3</text>
+		    <value>version-3</value>
+		   </option>
+		   <option>
+		    <text>Header V4</text>
+		    <value>version-4</value>
+		   </option>
+		   <option>
+		    <text>Header V5</text>
+		    <value>version-5</value>
+		   </option>
+		   <option>
+		    <text>Header V6</text>
+		    <value>version-6</value>
+		   </option>
+		   <option>
+		    <text>Header V7</text>
+		    <value>version-7</value>
+		   </option>
+		   <option>
+		    <text>Header V8</text>
+		    <value>version-8</value>
+		   </option>
+		   <option>
+		    <text>Header V9</text>
+		    <value>version-9</value>
+		   </option>
+  		</item>
+
+		<item>
+			<label>Footer Layout</label>
+			<block>footer_layout</block>
+			<default>default</default>
+			<option>
+				<text>Default</text>
+				<value>default</value>
+			</option> 
+			<option>
+				<text>Theme</text>
+				<value>theme</value>
+			</option>
+		</item>
+
+		<item>
+			<label>Enable Catalog Mode</label>
+			<block>catalog_mode</block>
+			<default>0</default>
+			<option>
+				<text>No</text>
+				<value>0</value>
+			</option> 
+			<option>
+				<text>Yes</text>
+				<value>1</value>
+			</option>
+		</item>
+		<item>
+			<label>Logo Type</label>
+			<block>logo_type</block>
+			<default>logo-theme</default>
+			<option>
+				<text>Logo In Theme</text>
+				<value>logo-theme</value>
+			</option> 
+			<option>
+				<text>Logo Opencart</text>
+				<value>logo-opencart</value>
+			</option> 
+		</item>
+		
+		<item>
+			<label>Offcanvas menu</label>
+			<block>offcanvas</block>
+			<default>category</default>
+			<option>
+				 <text>Category</text>
+				 <value>category</value>
+			</option> 
+			<option>
+				 <text>Megamenu</text>
+				 <value>megamenu</value>
+			</option>
+		</item>
+		<item>
+		   <label>Main Content Home FullWidth</label>
+		   <block>home_container_full</block>
+		   <default>0</default>
+		   <option>
+		    <text>No</text>
+		    <value>0</value>
+		   </option> 
+		   <option>
+		    <text>Yes</text>
+		    <value>1</value>
+		   </option>
+		</item>
+	</layout>
+</themeeditor>

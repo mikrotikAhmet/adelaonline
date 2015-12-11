@@ -1,0 +1,23 @@
+.buttons {
+    @include clearfix;
+    padding: 20px 0;
+    .left {
+        @include rtl-float-left;
+    }
+    .right {
+        @include rtl-float-right;
+    }
+}
+
+.checkbox, .radio{
+    @include rtl-padding-left(20px);
+}
+.review-form-width {
+	background-color: #fff;
+    margin: 10% auto;
+    max-width: 600px;
+    position: relative;
+    z-index: 999999;
+    background-color: #fff;
+    padding:30px 20px;
+}

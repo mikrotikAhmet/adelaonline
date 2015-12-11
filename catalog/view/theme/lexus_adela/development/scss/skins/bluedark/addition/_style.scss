@@ -1,0 +1,29 @@
+.menu-heading{
+	h4,h4 span{
+		color: $white;
+	}
+}
+.pav-verticalmenu{
+	margin-bottom:30px;
+}
+
+.post-image{
+	width:100%;
+}
+.verticalmenu {
+	.navbar-nav {
+		> li{
+			&:hover {
+	            > .dropdown-menu {
+	                top: 0px;
+                    @include rtl-left(auto);
+                    @include rtl-right(100%);
+	            }
+	        }
+		}
+	}
+	.dropdown-menu {
+        @include rtl-left(auto);
+        @include rtl-right(110%);
+    }
+}

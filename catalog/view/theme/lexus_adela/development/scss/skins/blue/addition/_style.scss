@@ -1,0 +1,41 @@
+.line::before{
+	background-color:#ece16b;
+}
+.sidebar{
+	.productdeals{
+		.product-block{
+			padding: 1px;
+			.image{
+				border:2px solid #ff0000;
+			}
+		} 
+	}
+}
+.post-image{
+	width:100%;
+}
+.pav-verticalmenu{
+	margin-bottom:30px;
+}
+.menu-heading{
+	h4,h4 span{
+		color: $white;
+	}
+}
+.verticalmenu {
+	.navbar-nav {
+		> li{
+			&:hover {
+	            > .dropdown-menu {
+	                top: 0px;
+                    @include rtl-left(auto);
+                    @include rtl-right(100%);
+	            }
+	        }
+		}
+	}
+	.dropdown-menu {
+        @include rtl-left(auto);
+        @include rtl-right(110%);
+    }
+}

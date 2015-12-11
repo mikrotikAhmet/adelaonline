@@ -1,0 +1,174 @@
+
+// owl-carousel default opencart
+body .owl-carousel {
+    box-shadow: none;
+    border-radius: 0;
+    background:transparent;
+    margin-bottom: 0;
+    .owl-wrapper-outer{
+        border:none;
+        box-shadow:none;
+    }
+}
+.image-additional{
+    .owl-item{
+        position: relative;
+        overflow: hidden;
+        width: 70px !important;
+        @include rtl-margin-right(8px);
+        border:1px solid $border-color;
+        &:first-child{
+            @include rtl-margin-left(2px);
+        }
+
+    }
+}
+// pav carousel
+.#{$app-brand-prefix}carousel {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    .carousel-control{
+        display: none;
+        &.middle.left {
+            @include rtl-left(-1px);
+        }
+        &.middle.right {
+            @include rtl-right(-1px);
+        }
+    }
+
+    &:hover {
+        .carousel-control {
+            display: block;
+        }
+    }
+}
+
+//pavreassurances
+.#{$app-brand-prefix}reassurances {
+    background-color: #fff;
+    border: 1px solid $border-color-base;
+    overflow: hidden;
+    margin-bottom: 0;
+    .media {
+        padding: 30px;
+        cursor: pointer;
+        position: relative;
+        h6 , a{
+            color: $white;
+        
+        &:hover {
+                color:$link-hover-color;
+            }
+        }
+    }
+    .media-body {
+        h6 {
+            margin-top:6px;
+            margin-bottom: 0;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 13px;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+// Module fitter
+.filter {
+    .filter-title {
+        color: #000;
+        font-weight: bold;
+    }
+    .filter-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        label {
+            font-weight: 300;
+        }
+    }
+
+    .radio, .checkbox {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+// pavproducts
+.pavproducts {
+    border: 1px solid $border-color-base;
+    .tab-pane {
+        position: relative;
+    }
+    .nav > li > a {
+        padding: 18px 10px;
+    }
+    .products-block {
+        border: none;
+    }
+}
+
+.cart {
+    .dropdown-menu {
+        padding: 20px;
+        min-width: 400px;
+    }
+}
+
+// banner builder
+.banner-wrapper-margin {
+    .banner-wrapper {
+        margin-bottom: 20px;
+    }
+}
+
+.nomargin .box {
+    margin-bottom: 0;
+}
+
+//fix-most-views productcarousel
+.fix-most-views {
+    .product-label, .rating, .cart, .action {
+        display: none;
+    }
+    .#{$products-row-selector} {
+        .#{$products-col-selector} {
+            min-height: 155px;
+            padding: 20px;
+        }
+    }
+    .product-block {
+        .name {
+            // margin-top: 0;
+        }
+        blockquote {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    }
+    .border {
+        &:after {
+            height: 0;
+        }
+    }
+}
+
+// newlatter
+.newsletter-v3 {
+    .valid{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 5px;
+        z-index: 9999;
+    }
+    ul{
+        margin: 0;
+    }
+}

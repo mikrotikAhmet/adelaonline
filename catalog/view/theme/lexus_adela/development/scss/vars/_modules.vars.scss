@@ -1,0 +1,198 @@
+// Mini basket and shopping cart
+// ========================================================================
+$cart-heading-color : 				$black !default;
+$cart-icon-bg:                      $theme-color-secondary !default;
+$cart-icon-color:                   $white !default;
+$cart-icon-font-size:               $font-size-base + 2 !default;
+$cart-product-font-size:			$font-size-base - 2 !default;
+
+$cart-font-size:					12px !default;
+$cart-font-weight:					900 !default;
+$cart-color:                        $white !default;
+$cart-color-hover:                  $white!default;
+$cart-bg-color:                     $theme-color !default;
+$cart-bg-color-hover:               $theme-color !default;
+$cart-font-icon-size:               14px !default;
+
+$cart-number-product-font-size:		10px !default;
+$cart-number-product-color:			$black!default;
+$cart-number-product-bg:			$white!default;
+$cart-number-product-color-hover:	$white!default;
+$cart-number-product-bg-hover:		$black!default;
+$cart-number-product-whidth:		15px !default;
+$cart-number-product-height:		14px !default;
+
+
+$quick-setting-border:              1px solid $border-color !default;
+$quick-setting-border-hover:        1px solid $theme-color !default;
+
+// Mini basket and shopping cart
+// ========================================================================
+
+// Last - Blog
+// ========================================================================
+ $blog-date-bg:                     $theme-bg-threedary !default;
+ $blog-date-text:                   $black !default;
+
+//Minicart
+$minicart-module-bg:                $theme-bg-default !default;
+$minicart-module-font:              600 18px "tahoma"!default;
+$minicart-module-list-font-family:  $font-family !default;
+$minicart-module-list-font-size:    14px!default;
+
+
+// Search
+// ========================================================================
+$search-border:						$border-color-base !default;
+$search-bg-color:                   $white !default;
+$search-padding: 					0 0 0 20px !default;
+$search-input-color: 			    $theme-color-default !default;
+$search-input-border:               none !default;
+$search-input-bg:                   transparent !default;
+$search-input-padding:              0 !default;
+$search-icon-color:                 $theme-color-default !default;
+$search-button-border:              none !default;
+$search-button-bg:                  $theme-color !default;
+$search-button-padding:             0 !default;
+
+// Contact page
+// ========================================================================
+$contact-bg:                        $body-bg !default;
+$contact-padding:                   20px !default;
+$contact-border:                    0 !default;
+$contact-icon-color:                $white !default;
+$contact-icon-bg:                   lighten($gray, 30%) !default;
+$contact-icon-font-size:            $font-size-base + 5 !default;
+$contact-icon-hover-bg:             $theme-color !default;
+$contact-height:                    338px !default;
+
+
+
+// Htab module
+// ========================================================================
+$htab-border-width:					0px 1px 1px 1px !default;
+$htab-nav-padding: 					10px 15px !default;
+$htab-nav-margin:                   0 !default;
+$htab-nav-color: 					$theme-color-secondary !default;
+$htab-bg: 							$wild-sand !default;
+$htab-bg-selected: 					$theme-color-default !default;
+$htab-nav-selected-color: 			$white !default;
+$htab-nav-border-color: 			transparent !default;
+$htab-nav-border-width:             0px 0px 0px 0px !default;
+$htab-nav-border-style:             solid !default;
+$htab-nav-border-color-hover:       $theme-color-default !default;
+$htab-nav-border-color-selected:    $htab-bg-selected $htab-bg-selected $htab-bg-selected $htab-bg-selected !default;
+$htab-nav-content-padding:          20px !default;
+$htab-nav-font-size:                $font-size-base + 2!default;
+
+
+// Mega Menu Module
+// ========================================================================
+$megamenu-bg: 						$theme-color-secondary !default;
+$megamenu-outside-bg:				transparent !default;
+$megamenu-border-color:             $border-color !default;			    
+$megamenu-border-bottom-color:      $black !default;
+$megamenu-font-family:              $font-menu-family !default;
+$megamenu-link-color: 				$white !default;
+$megamenu-font-weight: 				400 !default;
+$megamenu-link-hover-color:         $theme-color !default;
+$megamenu-link-bg-hover-color:      $white !default;
+$megamenu-color: 				    $black !default;
+$megamenu-caret:                    $black !default;
+
+$megamenu-parent-padding: 			23px 24px !default;
+$megamenu-parent-text-transform		: uppercase!default;
+$megamenu-margin-bottom:			20px !default; 
+
+$megamenu-sub-bg-color: 			$white !default;
+$megamenu-sub-radius:               0px !default;
+$megamenu-sub-text-color:           $theme-color-secondary !default ;
+$megamenu-sub-link-color: 			$gray-dark !default;
+$megamenu-sub-shadow:    			0px 0px 5px 0px rgba(0, 0, 0, 0.24) !default;
+$megamenu-sub-padding:              30px !default;
+$megamenu-sub-min-width:  			185px !default;
+$megamenu-sub-border:               2px !default;
+$megamenu-sub-font-size:            13px !default;
+$megamenu-arrow-bg:                 darken($megamenu-sub-bg-color, 20%) !default;
+$megamenu-product-name-color:       $theme-color-secondary !default;
+$megamenu-text-align:               left !default;
+$megamenu-heading-letter:           3px !default;
+$megamenu-sub-caret-color:  		$megamenu-sub-text-color !default;
+$megamenu-name-hover-color:         $theme-color !default;
+$megamenu-sub-link-hover-color:     $theme-color !default;
+$megamenu-link-font-size:           $font-size-base !default;
+$megamenu-link-font-family:         $font-family-base !default;
+$megamenu-link-hover-border:        #f0f0f0 !default;
+$megamenu-heading-title:            $font-family !default;
+$megamenu-heading-color:            $white !default;
+$megamenu-line-border:  			1px solid #646464 !default;
+
+$megamenu-widget-title-color:		$black !default;
+// Vertical Menu Module
+// ========================================================================
+$vertical-menu-font-family:         $font-family-four !default;
+$vertical-menu-content-bg:          $white !default;
+$vertical-menu-heading-bg:          $theme-color !default;
+$vertical-menu-content-height:      570px !default;
+$vertical-menu-content-padding:     0 !default;
+$vertical-menu-content-margin:      0 !default;
+$vertical-menu-content-border:      1px solid $border-color !default;
+$vertical-menu-font-size:           $font-size-base - 2 !default;
+$vertical-menu-color:               $white !default;
+$vertical-menu-font-weight:         normal !default;
+$vertical-menu-link-padding: 		14px 10px 15px 20px !default;
+$vertical-menu-link-hover-color:    $theme-color-default !default;
+$vertical-menu-link-bg:             #6bc0e5 !default;
+$vertical-border-color:             $border-color !default;
+$vertical-description-font-size:    11px !default;          
+$vertical-description-font-style:   italic !default;
+$vertical-description-color: 	    red !default;
+$vertical-description-font-weight:  300 !default;
+$vertical-caret-border:             $theme-color-tertiary !default;
+$vertical-sub-menu-padding:         20px 28px !default;
+$vertical-sub-menu-width:           230px !default;
+$vertical-sub-menu-link-color:      $theme-color-primary !default;
+$vertical-sub-menu-link-font-size:  $font-size-base !default;
+$vertical-sub-menu-link-font:       $font-family-base !default;
+$vertical-sub-menu-heading-color:   $theme-color-default !default;
+$vertical-sub-menu-bg:              $white !default;
+$vertical-sub-product-link:         $theme-color-default !default;
+$vertical-menu-link-hover:          $theme-color !default;
+$vertical-sub-shadow:  				0 0 5px 0 rgba(0, 0, 0, 0.45) !default;
+$vertical-font-size:                $font-size-base !default;
+$vertical-line-height:              normal !default;
+
+
+// OffCanvas Menu 
+// ========================================================================
+$offcanvas-menu-bg:                 $silver !default;
+$offcanvas-menu-padding:            12px 15px !default;
+$offcanvas-menu-link-color:         $white !default;
+$offcanvas-menu-font-size:          $font-size-base !default;
+$offcanvas-menu-transform:          uppercase !default;
+$offcanvas-menu-font-family: 		$font-family-secondary !default;
+$offcanvas-menu-border:             1px solid lighten($offcanvas-menu-bg, 10%) !default;
+$offcanvas-menu-icon-color:         $white !default;
+$offcanvas-menu-icon-font-size:     $font-size-base * 2 + 2 !default;
+$offcanvas-menu-icon-padding:       8px 15px !default;
+$offcanvas-menu-border-caret:       1px solid $white !default;
+$offcanvas-menu-caret-color:        $white !default;
+$offcanvas-menu-text-color:         $theme-color-secondary !default;
+$offcanvas-menu-text-fs:            $font-size-base + 1 !default;
+
+
+// Social
+// ========================================================================
+ $socials-theme-color:              $black;
+$socials-theme-font-size: 		   10px;
+$socials-theme-font-weight:        300;
+$socials-theme-width:              114px;
+$socials-theme-height:             42px;
+$socials-theme-icon-color:         $white;
+$socials-theme-icon-border:        0;
+$socials-theme-icon-font-size:     $font-size-base + 7;
+$socials-theme-border:             1px solid darken($border-color, 5%);
+$socials-theme-padding:            11px 10px;
+$socials-theme-margin:             0;
+$socials-theme-outside:            -262px;
+

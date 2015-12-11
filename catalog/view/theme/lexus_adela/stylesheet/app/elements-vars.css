@@ -1,0 +1,44 @@
+/*
+Error: Invalid CSS after "...o-action --- *\/": expected selector or at-rule, was "$white : #FFFFF..."
+        on line 12 of /Applications/XAMPP/xamppfiles/htdocs/test/lexus_extroic.dev/catalog/view/theme/lexus_extroic/development/scss/app/elements-vars.scss
+
+7: 
+8:  /* --- SCSS For Breadcrumb --- *\/
+9: 
+10:  /* --- SCSS For Buttons --- *\/
+11: 
+12:  /* --- SCSS For Call-to-action --- *\/$white : #FFFFFF !default;
+13: 
+14:  /* --- SCSS For Counters --- *\/$bo-counter-color:                   $brand-success;
+15: $bo-counter-font-weight:             800;
+16: $bo-counter-font-size:               36px;
+17: 
+
+Backtrace:
+/Applications/XAMPP/xamppfiles/htdocs/test/lexus_extroic.dev/catalog/view/theme/lexus_extroic/development/scss/app/elements-vars.scss:12
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1165:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1101:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/bin/compass:23:in `load'
+/usr/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...o-action --- */\": expected selector or at-rule, was \"$white : #FFFFF...\"\A         on line 12 of /Applications/XAMPP/xamppfiles/htdocs/test/lexus_extroic.dev/catalog/view/theme/lexus_extroic/development/scss/app/elements-vars.scss\A \A 7: \A 8:  /* --- SCSS For Breadcrumb --- */\A 9: \A 10:  /* --- SCSS For Buttons --- */\A 11: \A 12:  /* --- SCSS For Call-to-action --- */$white : #FFFFFF !default;\A 13: \A 14:  /* --- SCSS For Counters --- */$bo-counter-color:                   $brand-success;\A 15: $bo-counter-font-weight:             800;\A 16: $bo-counter-font-size:               36px;\A 17: "; }

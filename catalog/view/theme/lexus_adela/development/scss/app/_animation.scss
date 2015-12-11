@@ -1,0 +1,75 @@
+
+.product-block{
+    .product-img {
+        position: relative;
+        overflow: hidden;
+    }
+    .action {
+        > div {
+            bottom: 50px;
+            height: 38px;
+            @include rtl-right(0);
+            position: absolute;
+            transition-duration: 0.35s;
+            transition-property: all;
+            width: 38px;
+            line-height: 38px;
+            opacity: 0;
+            background-color:$white;
+            @include transition(all 300ms ease-in-out);
+            &.compare{
+                @include rtl-right(80px);
+                transition-delay: 0.4s, 0s;
+            }
+            &.wishlist{
+                @include rtl-right(40px);
+                transition-delay: 0.3s, 0s;
+            }
+            &.zoom{                
+                transition-delay: 0.2s, 0s;
+            }
+            &:hover{
+                background-color:$theme-color;
+                color: $white;                
+                .btn-action{
+                    color: $white;
+                }
+            }
+        }
+        button.btn-action{
+            background-color: transparent;
+            border:none;
+            padding:0;
+        }
+    }
+    &:hover {
+        .action{
+            > div{
+                opacity: 1;                
+            }          
+        }
+    }
+}    
+
+// effect banner
+.effect {
+    position: relative;
+    overflow: hidden;
+    .overlay {
+      &::before{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        @include rtl-left(0);
+        @include transition(all 300ms ease-in-out);
+      }
+    }
+    &:hover{
+      .overlay::before{
+          @include box-shadow(0 0 0 20px rgba(255, 255, 255, 0.4) inset);   
+      }
+  }
+}
+

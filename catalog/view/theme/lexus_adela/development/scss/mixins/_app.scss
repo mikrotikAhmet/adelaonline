@@ -1,0 +1,847 @@
+@mixin rtl-translate3d ($x,$y,$z) {
+  -webkit-transform: translate3d($x, $y , $z);
+   -moz-transform: translate3d($x, $y , $z);
+   -ms-transform:  translate3d($x, $y , $z);
+   -o-transform:  translate3d($x, $y , $z);
+   transform:  translate3d($x, $y , $z);
+  .rtl & {
+    webkit-transform: translate3d(-$x, -$y , $z);
+   -moz-transform: translate3d(-$x, -$y , $z);
+   -ms-transform:  translate3d(-$x, -$y , $z);
+   -o-transform:  translate3d(-$x, -$y , $z);
+   transform:  translate3d(-$x, -$y , $z);
+  }
+}
+@mixin border-exclude-top($border-deep, $border-type , $border-color ){
+   border-bottom: $border-deep $border-type $border-color ;
+   border-left: $border-deep $border-type $border-color ;
+   border-right: $border-deep $border-type $border-color ;
+}
+
+@mixin border-exclude-bottom($border-deep, $border-type , $border-color ){
+   border-top: $border-deep $border-type $border-color ;
+   border-left: $border-deep $border-type $border-color ;
+   border-right: $border-deep $border-type $border-color ;
+}
+
+@mixin border-exclude-left($border-deep, $border-type , $border-color ){
+   border-top: $border-deep $border-type $border-color ;
+   border-bottom: $border-deep $border-type $border-color ;
+   border-right: $border-deep $border-type $border-color ;
+}
+
+@mixin border-exclude-right($border-deep, $border-type , $border-color ){
+   border-top: $border-deep $border-type $border-color ;
+   border-bottom: $border-deep $border-type $border-color ;
+   border-left: $border-deep $border-type $border-color ;
+}
+
+@mixin rounded-corners ($radius) {
+   -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   -o-border-radius: $radius;
+   border-radius: $radius;
+}
+
+@mixin clearboxstyle(){
+   background: none;
+   border:none;
+}
+
+@mixin clearfloat(){
+   float: none;
+   width: 100%;
+}
+ 
+
+@mixin transform-style($transform-style){
+   -webkit-transform-style: $transform-style;                    
+   -moz-transform-style: $transform-style;                    
+   -ms-transform-style: $transform-style;                    
+   -o-transform-style: $transform-style;                    
+   transform-style: $transform-style;
+}
+
+@mixin backface-visibility($backface-visibility){
+   backface-visibility: $backface-visibility;  /* W3C */
+   -webkit-backface-visibility: $backface-visibility; /* Safari & Chrome */
+   -moz-backface-visibility: $backface-visibility; /* Firefox */
+   -ms-backface-visibility: $backface-visibility; /* Internet Explorer */
+   -o-backface-visibility: $backface-visibility; /* Opera */
+}
+
+@mixin animation-theme($animation-duration, $animation-fill-mode, $animation-name){
+   -webkit-animation-duration: $animation-duration; 
+   -moz-animation-duration: $animation-duration; 
+   -ms-animation-duration: $animation-duration; 
+   -o-animation-duration: $animation-duration; 
+   animation-duration: $animation-duration; 
+
+   -webkit-animation-fill-mode: $animation-fill-mode;
+   -moz-animation-fill-mode: $animation-fill-mode;
+   -ms-animation-fill-mode: $animation-fill-mode;
+   -o-animation-fill-mode: $animation-fill-mode;
+   animation-fill-mode: $animation-fill-mode;
+
+   -webkit-animation-name: $animation-name;
+   -moz-animation-name: $animation-name; 
+   -ms-animation-name: $animation-name; 
+   -o-animation-name: $animation-name; 
+   animation-name: $animation-name; 
+}
+
+@mixin perspective($perspective){
+   -webkit-perspective: $perspective;
+   -ms-perspective: $perspective;
+   -moz-perspective: $perspective;
+   -o-perspective: $perspective;
+   perspective: $perspective;    
+}
+
+/**
+* Transition-timing-function property@mixin 
+*/
+@mixin transition-timing-function($timing-function) {
+   -moz-transition-timing-function: $timing-function;
+   -o-transition-timing-function: $timing-function;
+   -webkit-transition-timing-function: $timing-function;
+   transition-timing-function: $timing-function;
+}
+
+@mixin transform($string){
+   -webkit-transform: $arguments;
+   -moz-transform:    $arguments;
+   -ms-transform:     $arguments;
+   -o-transform:      $arguments;
+}
+
+@mixin appearance($appearance){
+   appearance: $arguments;
+   -moz-appearance: $arguments;
+   -ms-appearance: $arguments;
+   -o-appearance: $arguments;
+   -webkit-appearance: $arguments; 
+}
+
+
+/*background RGBA
+============================================*/
+@mixin rgba($colour, $alpha)
+{
+   $alphaColour: hsla(hue($colour), saturation($colour), lightness($colour), $alpha);
+   $ieAlphaColour: argb($alphaColour);   
+   background-color: $colour; 
+   background-color: $alphaColour;       
+   zoom: 1; 
+   background-color: transparent\9;   
+   
+   
+}
+
+
+@mixin border-rgba($colour, $alpha)
+{
+   $alphaColour: hsla(hue($colour), saturation($colour), lightness($colour), $alpha);
+   $ieAlphaColour: argb($alphaColour);   
+   border-color: $colour; 
+   border-color: $alphaColour;       
+   zoom: 1; 
+   border-color: transparent\9;
+  
+}
+
+//copyright
+
+//sub heading (h2,h3) define
+@mixin sub-heading {
+  @include rtl-float-left();
+  color: $block-heading-color;
+  text-transform: uppercase;
+  font: 600 14px/20px $font-custom;
+  padding: 8px 15px;
+  margin: 0 0 20px;
+  min-width: 120px;
+  position: relative;
+  background: $theme-bg-default;
+}
+@mixin sub-heading-before {
+  height: 0;
+  width: 0;
+  @include rtl-right(45%);
+  top: 100%;
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: $theme-bg-default;
+}
+
+//background
+@mixin background-hover {
+  color: $base-text-color;
+  background: rgba(228, 50, 40, 0.3);
+}
+
+/*inline-block
+============================================*/
+
+@mixin inline-block() {
+   display: inline-block;
+   *display: inline;
+   zoom: 1;   
+}
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
+
+// Boxs
+// -------------------------
+
+@mixin box-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+
+  & > .box-heading {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: $heading-border;
+
+    + .panel-collapse > .box-content {
+      border-top-color: $border;
+    }
+    .badge {
+      color: $heading-bg-color;
+      background-color: $heading-text-color;
+    }
+  }
+  & > .box-footer {
+    + .panel-collapse > .box-content {
+      border-bottom-color: $border;
+    }
+  }
+}
+
+
+/// button variant outline
+@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $colorhover;
+    background-color: $bghover;
+        border-color: $borderhover ;
+  }
+  .open & { &.dropdown-toggle {
+    color: $colorhover;
+    background-color: $bghover;
+        border-color: $borderhover ;
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  @include transition(all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s);
+  position:relative;
+  z-index:0;
+  &:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    @include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    height:100%;
+    background:$bghover;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $colorhover;
+    background-color: $bghover;
+    border-color: $borderhover ;
+  }
+  .open & { &.dropdown-toggle {
+    color: $colorhover;
+    background-color: $bghover;
+        border-color: $borderhover ;
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Block
+// -------------------------
+@mixin block-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+
+  & .#{$block-heading-selector} {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: $heading-border;
+    + .#{$block-prefix}-collapse .#{$block-content-selector} {
+      border-top-color: $border;
+    }
+  }
+  & > .#{$block-prefix}-footer {
+    + .#{$block-prefix}-collapse .#{$block-prefix}-body {
+      border-bottom-color: $border;
+    }
+  }
+}
+
+/****/
+@mixin container-layout-variant($color, $background, $linkcolor,  $link-hover-color ){
+    background: $background;
+    color: $color;
+    a{
+      color:$linkcolor; 
+      &:hover{
+        color: $link-hover-color; 
+      }  
+    }         
+}
+
+
+
+
+
+/* RIGHT TO LEFT */
+
+
+// BASIC CONVERTER (ignore these)
+
+@mixin rtl-base-simple ($property, $direction) {
+  #{$property}:$direction;
+  .rtl & {
+    @if $direction == $rtl-right {
+      #{$property}:$rtl-left;
+    }
+    @else {
+      #{$property}:$rtl-right;
+    }
+  }
+}
+@mixin rtl-base-inherit ($property, $direction, $value, $inherit : inherit) {
+  #{$property}-#{$direction}: $value;
+  .rtl & {
+    @if $direction == $rtl-right {
+      #{$property}-#{$rtl-left}: $value;
+    }
+    @else {
+      #{$property}-#{$rtl-right}: $value;
+    }
+    #{$property}-#{$direction}: $inherit;
+  }
+}
+
+@mixin rtl-base-toprightbottomleft ($property, $t, $r, $b, $l) {
+  #{$property}: $t $r $b $l;
+  .rtl & {
+    #{$property}: $t $l $b $r;
+  }
+}
+
+// BODY STYLES
+
+@mixin rtl-direction ($forBody : true) {
+  direction: ltr;
+  @if $forBody {
+    &.rtl {
+      direction: rtl;
+    }
+  } 
+  @else {
+    .rtl & {
+      direction: rtl;
+    }
+  }
+}
+
+@mixin rtl-font-family ($ltr, $rtl, $forBody : false) {
+  font-family: $ltr;
+  @if $forBody {
+    &.rtl, &.non-latin {
+      font-family:$rtl;
+    }
+  } 
+  @else {
+    .rtl &, .non-latin & {
+      font-family:$rtl;
+    }
+  }
+}
+
+
+// MARGIN
+
+@mixin rtl-margin ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(margin,$t, $r, $b, $l);
+}
+@mixin rtl-margin-left ($value) {
+  @include rtl-base-inherit(margin,$rtl-left,$value);
+}
+@mixin rtl-margin-right ($value) {
+  @include rtl-base-inherit(margin,$rtl-right,$value);
+}
+
+// PADDING
+
+@mixin rtl-padding ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(padding,$t, $r, $b, $l);
+}
+@mixin rtl-padding-left ($value) {
+  @include rtl-base-inherit(padding,$rtl-left,$value);
+}
+@mixin rtl-padding-right ($value) {
+  @include rtl-base-inherit(padding,$rtl-right,$value);
+}
+
+// BORDER
+
+@mixin rtl-border-left ($value) {
+  @include rtl-base-inherit(border,$rtl-left,$value);
+}
+@mixin rtl-border-right ($value) {
+  @include rtl-base-inherit(border,$rtl-right,$value);
+}
+
+
+
+
+// POSITION
+
+@mixin rtl-left ($value) {
+  #{$rtl-left}: $value;
+  .rtl & {
+    #{$rtl-right}: $value;
+    #{$rtl-left}: auto;
+  }
+}
+@mixin rtl-right ($value) {
+  #{$rtl-right}: $value;
+  .rtl & {
+    #{$rtl-left}: $value;
+    #{$rtl-right}: auto;
+  }
+}
+
+// TEXT-ALIGN
+
+@mixin rtl-text-align-left () {
+  @include rtl-base-simple(text-align, $rtl-left);
+}
+@mixin rtl-text-align-right () {
+  @include rtl-base-simple(text-align, $rtl-right);
+}
+
+// FLOAT
+
+@mixin rtl-float-left () {
+  @include rtl-base-simple(float, $rtl-left);
+}
+@mixin rtl-float-right () {
+  @include rtl-base-simple(float, $rtl-right);
+}
+// clear
+
+@mixin rtl-clear-left () {
+  @include rtl-base-simple(clear, $rtl-left);
+}
+@mixin rtl-clear-right () {
+  @include rtl-base-simple(clear, $rtl-right);
+}
+// BACKGROUND-POSITION
+
+@mixin rtl-background-position-left ($vertical) {
+  background-position:$rtl-left $vertical;
+  .rtl & {
+    background-position:$rtl-right $vertical;
+  }
+}
+@mixin rtl-background-position-right ($vertical) {
+  background-position:$rtl-right $vertical;
+  .rtl & {
+    background-position:$rtl-left $vertical;
+  }
+}
+
+@mixin rtl-background-position-percent ($vertical, $horPercent) {
+  background-position:$horPercent $vertical;
+  .rtl & {
+    background-position:100% - $horPercent $vertical;
+  }
+}
+
+// TEXT-SHADOW & BOX-SHADOW
+
+@mixin rtl-text-shadow ($x, $rest) {
+  text-shadow: $x $rest;
+  .rtl & {
+    text-shadow: -1 * $x $rest;
+  }
+}
+@mixin rtl-box-shadow ($x, $rest) {
+  -moz-box-shadow: $x $rest;
+  -webkit-box-shadow: $x $rest;
+  box-shadow: $x $rest;
+  .rtl & {
+    -moz-box-shadow: -1 * $x $rest;
+    -webkit-box-shadow: -1 * $x $rest;
+    box-shadow: -1 * $x $rest;
+  }
+}
+
+// BORDER-RADIUS
+
+@mixin rtl-border-radius-topright ($tl, $tr, $br, $bl) {
+  -moz-border-radius: $tl, $tr, $br, $bl;
+  -webkit-border-radius: $tl, $tr, $br, $bl;
+  border-top-radius: $tl, $tr, $br, $bl;
+  .rtl & {
+    -moz-border-radius: $tr, $tl, $bl, $br;
+    -webkit-border-radius: $tr, $tl, $bl, $br;
+    border-top-radius: $tr, $tl, $bl, $br;
+  }
+}
+
+@mixin rtl-border-radius-topright ($value) {
+  -moz-border-radius-top#{$rtl-right}: $value;
+  -webkit-border-top-#{$rtl-right}-radius: $value;
+  border-top-#{$rtl-right}-radius: $value;
+  .rtl & {
+    -moz-border-radius-top#{$rtl-left}: $value;
+    -webkit-border-top-#{$rtl-left}-radius: $value;
+    border-top-#{$rtl-left}-radius: $value;
+    -moz-border-radius-top#{$rtl-right}: inherit;
+    -webkit-border-top-#{$rtl-right}-radius: inherit;
+    border-top-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomright ($value) {
+  -moz-border-radius-bottom#{$rtl-right}: $value;
+  -webkit-border-bottom-#{$rtl-right}-radius: $value;
+  border-bottom-#{$rtl-right}-radius: $value;
+  .rtl & {
+    -moz-border-radius-bottom#{$rtl-left}: $value;
+    -webkit-border-bottom-#{$rtl-left}-radius: $value;
+    border-bottom-#{$rtl-left}-radius: $value;
+    -moz-border-radius-bottom#{$rtl-right}: inherit;
+    -webkit-border-bottom-#{$rtl-right}-radius: inherit;
+    border-bottom-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-topleft ($value) {
+  -moz-border-radius-top#{$rtl-left}: $value;
+  -webkit-border-top-#{$rtl-left}-radius: $value;
+  border-top-#{$rtl-left}-radius: $value;
+  .rtl & {
+    -moz-border-radius-top#{$rtl-right}: $value;
+    -webkit-border-top-#{$rtl-right}-radius: $value;
+    border-top-#{$rtl-right}-radius: $value;
+    -moz-border-radius-top#{$rtl-left}: inherit;
+    -webkit-border-top-#{$rtl-left}-radius: inherit;
+    border-top-#{$rtl-left}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomleft ($value) {
+  -moz-border-radius-bottom#{$rtl-left}: $value;
+  -webkit-border-bottom-#{$rtl-left}-radius: $value;
+  border-bottom-#{$rtl-left}-radius: $value;
+  .rtl & {
+    -moz-border-radius-bottom#{$rtl-right}: $value;
+    -webkit-border-bottom-#{$rtl-right}-radius: $value;
+    border-bottom-#{$rtl-right}-radius: $value;
+    -moz-border-radius-bottom#{$rtl-left}: inherit;
+    -webkit-border-bottom-#{$rtl-left}-radius: inherit;
+    border-bottom-#{$rtl-left}-radius: inherit;
+  }
+}
+
+@mixin text-shadow(){
+  a{
+    &:hover{
+      text-shadow: 0 0 15px #FFFFFF;
+      transform: scale(1.05);
+    }
+  }
+}
+
+
+// effect
+// prefix declarations
+@mixin prefixed($property, $value) {
+  @if $webkit == true {
+    -webkit-#{$property}: #{$value};
+  }
+
+  @if $moz == true {
+    -moz-#{$property}: #{$value};
+  }
+
+  @if $ms == true {
+    -ms-#{$property}: #{$value};
+  }
+
+  @if $o == true {
+    -o-#{$property}: #{$value};
+  }
+
+  #{$property}: #{$value};
+}
+
+// prefix keyframes
+@mixin keyframes($name) {
+  @if $webkit == true {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $moz == true {
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $ms == true {
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $o == true {
+    @-o-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin hardwareAccel() {
+    // Improve performance on mobile/tablet devices
+    @include prefixed(transform, translateZ(0));
+}
+
+@mixin improveAntiAlias() {
+    // Improve aliasing on mobile/tablet devices
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@mixin fontSmooth() {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin forceBlockLevel() {
+    // Transforms need to be block-level to work
+    // display: inline-block;
+    display: block;
+    vertical-align: middle;
+}
+
+@mixin hacks() {
+    @include forceBlockLevel();
+    @include hardwareAccel();
+    @include improveAntiAlias();
+    @include fontSmooth();
+}
+
+
+/* Curl Top Right */
+@mixin curl-top-right {
+    @include hacks();
+    position: relative;
+
+    &:before {
+        pointer-events: none;
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        top: 0;
+        right: 0;
+        background: $revealAreaColor; /* IE9 */
+        background: linear-gradient(
+            225deg,
+            $revealAreaColor 45%,
+            $curlLineColor 50%,
+            $curlTransitionColor 56%,
+            $curlLastColor 80%
+        );
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, .4);
+        @include prefixed(transition-duration, $mediumDuration);
+        @include prefixed(transition-property, "width, height");
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        width: $curlWidth;
+        height: $curlHeight;
+    }
+}
+
+
+@mixin button-inverse( $suffixclass,  $color ,$background ){
+ 
+  &.btn-#{$suffixclass}{
+      &:hover{ 
+        color:$color;
+        background:transparent;
+      }
+  }
+}
+
+@mixin button-outline( $suffixclass, $color, $hovercolor ){
+  background:transparent;
+  &.btn-#{$suffixclass}{
+      color:$color;
+      &:hover{
+          color:$hovercolor;
+      }
+  }
+}
+
+@mixin button-3d($suffixclass, $height3d ,$color3d){
+  border: 0;
+  @if ($suffixclass == "empty") {
+      box-shadow: 0 $height3d $color3d inset;
+      -o-box-shadow: 0 $height3d $color3d inset;
+      -moz-box-shadow: 0 $height3d $color3d inset;
+      -webkit-box-shadow: 0 $height3d $color3d inset;
+      -ms-box-shadow: 0 $height3d $color3d inset;
+  }
+  @else {
+  &.btn-#{$suffixclass}{
+     box-shadow: 0 $height3d $color3d inset;
+      -o-box-shadow: 0 $height3d $color3d inset;
+      -moz-box-shadow: 0 $height3d $color3d inset;
+      -webkit-box-shadow: 0 $height3d $color3d inset;
+      -ms-box-shadow: 0 $height3d $color3d inset;
+    }
+  }
+}
+
+// icon variant inverse
+
+@mixin icons-inverse( $suffixclass,  $color ,$background ){
+ 
+  &.icons-#{$suffixclass}{
+      &:hover{ 
+        color:$color;
+        background:transparent;
+      }
+  }
+}
+// icon variant outline
+
+@mixin icons-outline( $suffixclass, $color, $hovercolor ){
+  &.icons-#{$suffixclass}{
+  background:transparent;
+      color:$color;
+      &:hover{
+          color:$hovercolor;
+      }
+  }
+}
+
+//mixin animation
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}

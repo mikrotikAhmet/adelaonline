@@ -1,0 +1,94 @@
+.productdeals {
+	.days{
+		color:$theme-color;
+	}
+	.footer-deals {
+		margin-top: 10px;
+		border-top:1px solid $border-color;
+		text-align: center;
+	}
+	.item-countdown {
+		position: absolute;
+		bottom:20px;
+		width:90%;
+		.countdown_num {		
+			position: relative;
+			z-index: 0;		
+			span{
+				color: $brand-default;
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		ul {			
+			margin: 0;
+			padding:0;
+		}
+		li {
+			
+			line-height: 16px;
+			@include rtl-margin-right(5px);
+			margin-top: 15px;
+			text-align: center;
+			background-color:$white;
+			border:2px solid $border-color;			
+			padding:5px 10px;
+			span{
+				font-size: 11px;
+				text-transform: uppercase;
+				color: $gray;
+			}
+		}
+	}
+	.product-block {
+		.deals{
+			display:inline-block;
+			margin-bottom:20px;
+			width:50%;
+			.price{
+				padding:15px;
+			}
+		}
+		.action {
+	        > div {
+	            bottom: 50%;
+	            right:50%;
+	            &.compare{
+	                right:50%;
+	            }
+	            &.wishlist{
+	                right:35%;
+	            }
+	        }
+	    }
+	}
+	&.image-deal{
+		.product-block {
+			border:1px solid $border-color;
+			text-align: left;
+			.image{
+				@include rtl-float-left;
+	            width: 47%;
+	            overflow: inherit;
+	            z-index: 1;
+			}
+			.name {
+	            margin-top: 0;
+	        }
+			.description{
+				display: block;
+				height: auto;
+			}
+			.product-meta{
+				padding:30px;
+			}
+			.quickview{
+				display: none;
+			}
+		}
+		.item-countdown{
+			@include rtl-right(-96%);
+			bottom:10px;
+		}
+	}
+}

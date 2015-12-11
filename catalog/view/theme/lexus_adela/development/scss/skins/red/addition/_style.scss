@@ -1,0 +1,20 @@
+.common-home{
+	.panel-default{
+		border-radius:0;
+		z-index: 1;
+		&.hightlight{
+			background: #f8f8f8;
+			border-top:1px solid #eee;
+		}
+	}
+}
+.footer-center{
+	.container-inner{
+		border-radius:0;
+	}
+}
+#powered{
+	.container-inner{
+		border-radius:0;
+	}
+} 

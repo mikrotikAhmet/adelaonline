@@ -1,0 +1,203 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "rtl/rtl";
+@import "vars/tabs";
+
+
+ /* tabs style 1 */ 
+ .nav-tabs {
+    >li {
+        float: none;
+        display: inline-block;
+        a {
+            font-size: 14px;
+        }
+    }
+ }
+.tab-v1 {
+    .nav-tabs {
+        border-bottom: none;
+       >  li {
+            > a {
+                color: $bo-tabs-a-color;
+                border: none;
+                border-radius:0;
+                padding: $bo-tabs-padding;
+                background: $bo-tabs-background;
+            }
+            &.active > a {
+                color: $bo-tabs-a-color-active;
+                border: none;
+                background:$bo-tabs-background-hover;
+            }
+        }
+    }   
+
+    .tab-content {
+        padding: $bo-tabs-content-padding;
+        background: $bo-tabs-content-background;
+    }
+    &.tab-info  .nav-tabs  > li > a { }
+}
+
+ /* tabs style 2 */
+.tab-v2 {
+    .tab-content {
+        overflow: hidden;
+        padding: $bo-tabs-content-padding;
+        background: $bo-tabs-content-background;
+    }
+    > .nav-tabs {
+        border-bottom: none;
+        >  li {
+            float: none;
+            display: block;
+            > a {
+                color: $bo-tabs-a-color;
+                border: none;
+                min-width: 75px;
+                border-radius: 0;
+                margin: 0 0 2px 0;
+                padding: $bo-tabs-padding;
+                background: $bo-tabs-background;
+            }
+            &.active > a {
+                color: $bo-tabs-a-color-active;
+                border: none;
+                background:$bo-tabs-background-hover;
+            }
+        }
+    }
+    &.tabs-left > .nav-tabs {
+        float: left;
+    }
+    &.tabs-right > .nav-tabs {
+        float: right;
+    }
+     
+}
+
+/*Tab v3
+------------------------------------*/
+
+.tab-v3 {
+    .nav-tabs {
+        > li{
+
+        }
+    }
+}
+ 
+
+/*Tab v4
+------------------------------------*/
+.tab-v4 {
+    .nav-tabs {
+        border-bottom: none;
+        > li {
+            > a {
+                color: $bo-tabs-v4-a-color;
+                border: none;
+                border-radius:0;
+                padding: $bo-tabs-v4-padding;
+                background: $bo-tabs-v4-background;
+
+            }
+            &:first-child {
+                a{
+                    @include rtl-padding-left (0);
+                }
+            }
+            &.active > a {
+                color: $bo-tabs-v4-a-color-active;
+                border: none;
+                background:$bo-tabs-v4-background-hover;
+            }
+        }
+    }
+    .tab-content {
+        padding: $bo-tabs-v4-content-padding;
+    }
+}
+/*Tab v5
+------------------------------------*/
+.tab-v5 {
+    .nav-tabs {
+        border-bottom: none;
+        > li {
+            > a {
+                color: $bo-tabs-a-color;
+                border: none;
+                border-radius: 0;
+                background: $bo-tabs-background;
+                margin-right: 2px;
+                padding: $bo-tabs-padding;
+                border-top: 2px solid transparent;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+            }
+            &.active > a {
+                color: #222;
+                border: none;
+                background: $bo-tabs-primary-background;
+                border-top: 2px solid $bo-tabs-primary-background-hover;
+                border-left: 1px solid $bo-tabs-border-color;
+                border-right: 1px solid $bo-tabs-border-color;
+            }
+        }
+    }
+    > .tab-content {
+        padding: $bo-tabs-content-padding;
+        border: $bo-tabs-content-border
+    }
+}
+
+/*Tab v6
+------------------------------------*/
+.tab-v6 {
+    .tab-heading {
+        overflow: hidden;
+        background:  $bo-tabs-v6-heading-background;
+        padding: $bo-tabs-v6-heading-padding;
+        border-top: 2px solid  $bo-tabs-v6-heading-border-top-color;
+        border-left: 1px solid $bo-tabs-v6-heading-border-color;
+        border-right: 1px solid $bo-tabs-v6-heading-border-color;
+    }
+    h2.category {
+        margin: 0;
+        float: left;
+        text-transform: uppercase;
+    }
+    .nav-tabs {
+        float: right;
+        border-bottom: none;
+        > li {
+            > a {
+                color: $bo-tabs-v6-a-color;
+                border: none;
+                border-radius:0;
+                padding: $bo-tabs-padding;
+            }
+            &.active > a {
+                color:red;
+             
+                &:hover, &:focus {
+                    color: $bo-tabs-v6-a-color-active;
+                }
+                color: #222;
+                &:hover, &:focus {
+                    border:none;
+                    color: $bo-tabs-v6-a-color-active;
+                }
+            }
+            > a:hover {
+                background: inherit;
+            }
+        }
+    }
+    .tab-content {
+        padding: $bo-tabs-content-padding;
+        border:$bo-tabs-v6-content-border-color;
+    }
+}

@@ -1,0 +1,116 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: $screen-md-min) {
+    .row-offcanvas {
+        position: relative;
+        @include transition(all 0.25s ease-out);
+    }
+    .row-offcanvas-left.active {
+        #page{
+            left: 0;
+            margin: 0 auto;
+            position: fixed;
+            right: 0;            
+            transform: translate(250px, 0px);
+            @include transition(all 500ms ease 0s);
+            &:before{
+                background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1050;
+            }
+        }
+        .sidebar-offcanvas{
+            position: absolute;
+            transform: translate(250px, 0px);
+            @include transition(all 500ms ease 0s);
+            visibility: visible;
+        }
+    }
+    .sidebar-offcanvas {
+        background: #ffffff none repeat scroll 0 0;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transform: translate(0px, 0px);
+        @include transition(all 500ms ease 0s);
+        visibility: hidden;
+        width: 0;
+        z-index: 999;
+        .offcanvas-inner{
+            left: -250px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width:250px;
+            background: #ffffff none repeat scroll 0 0;
+        }
+    }
+    .bottom-offcanvas {
+        padding: 10px 0;
+        position: relative;
+        z-index: 9;
+    }
+}
+/*offcanvas-menu*/
+.offcanvas-body{
+    padding:7px;
+}
+#offcanvasmenu {
+  .navbar-nav {
+    float: none;
+    > li {
+      float: none;
+      border-top:1px solid $border-color;
+      >a {
+        background: transparent;
+        padding:5px 10px;
+        font-family: $megamenu-font-family;
+        text-transform: uppercase;
+        font-size: $font-size-base;
+      }
+    }
+  }
+  .dropdown-menu {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    display: none;
+    float: none;
+    margin: 0;
+    padding: 0 8px;
+    position: static;
+    visibility: visible;
+    width: auto!important;
+    @include opacity (1);
+    a {
+      font-size: 13px;
+      padding: 5px 10px;
+      font-family: $megamenu-font-family;
+      background: none;
+    }
+    .widget-video{
+        display: none;
+    }
+    .box-heading{
+        color: $theme-color-secondary;
+    }
+  }
+  .w-product {
+    padding: 0;
+  }
+  .product-block{
+    border: none;
+    .zoom,.product-label{
+        display: none;
+    }
+
+  } 
+}

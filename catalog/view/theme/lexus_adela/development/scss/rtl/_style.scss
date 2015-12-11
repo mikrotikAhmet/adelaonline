@@ -1,0 +1,194 @@
+ul, ol {
+    padding-right: 0;
+}
+
+.zoomContainer .zoomWindow {
+    right: 100% !important;
+}
+.rtl{
+	.radius-right-5xxs {
+		border-top-left-radius: 5px !important;
+		border-bottom-left-radius: 5px !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+	.list-group-item .accordion-body {
+	    padding-left: inherit;
+	    padding-right: 15px;
+	}
+	.addthis_default_style .addthis_counter,.addthis_default_style .addthis_separator, .addthis_default_style .at300b, .addthis_default_style .at4-icon, .addthis_default_style .at300bo, .addthis_default_style .at300m, .addthis_default_style .at300bs
+	{
+		float: right;
+	}
+	.blog-social .social-wrap > div{
+		float: right;
+	}
+	.blog-meta > span{
+		float: right;
+	}
+	.blog-readmore,
+	.latest-posts-v1 .blog-meta{
+		text-align: right;
+	}
+	span.head a{
+		float: left !important;
+		margin-left: 12px;
+	}
+	.comment-link{
+		float: left;
+		margin-left: -20px;
+	}
+	.blog-header span{
+		float: right;
+		right: 8px;
+		left: auto;
+	}
+	.comment-item img{
+		text-align: right;
+		padding-left:12px;
+		padding-right: 0;
+		float: right;
+	}
+	.pav-comment img{
+		float: right;
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.t-avatar{
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	#pav-megamenu .navbar-nav li.aligned-center .dropdown-menu{
+		right: auto;
+	}
+	#pav-megamenu .navbar-nav > li.aligned-center .dropdown-submenu .dropdown-menu{
+		left: auto;
+	}
+	#pav-megamenu .navbar-nav > li.aligned-right .dropdown-menu{
+		left: 0 !important;
+	}
+	#pav-megamenu .navbar-nav > li.home{
+		padding-right:25px;
+	}
+	#search {
+	    button{
+	        border-right:0;
+	    }
+	}
+	#topbar .dropdown > .dropdown-menu	{
+		left: -5px;
+		right: auto;
+	}
+	.show-mobile .inner-toggle	{
+		left: -5px;
+		right: auto;
+	}
+	.productdeals .item-countdown li:first-child{
+		border-right:1px solid $border-color;
+	}
+	#pav-paneltool form > *{
+		float: right;
+	}
+	.paneltool{
+		left: auto !important;
+		right: -322px;	
+	}
+	.panelbutton{
+		right: auto !important;
+		left: -37px;
+	}
+	.editortool .label-customize{
+		right: auto !important;
+		top: 220px !important;
+		left: -165px;
+		-webkit-transform: rotate(222deg);
+		-moz-transform: rotate(222deg);
+		-ms-transform: rotate(222deg);
+		-o-transform: rotate(222deg);
+		transform: rotate(222deg);	
+	}
+	.paneltool.active{
+		right: 0;
+	}
+	.verticalmenu .navbar-nav > li > a .menu-icon{
+		background-position:right 0 !important;
+	}
+	.verticalmenu .bg1 div.dropdown-menu{
+		background-position:left bottom;
+	}
+	.cart-top .dropdown-menu{
+		right: auto;
+		left: 15px;
+	}
+	.products-owl-carousel .carousel-controls,.carousel-controls{
+		left: 70px !important;
+		right: auto !important;
+	}
+	.widget-tablist .carousel-controls{
+		left: 83px !important;		
+	}
+	.autosearch-wrapper .search_query{
+		float: right;
+	}
+	.call-top{
+		background-position:right center;
+	}
+	.top-verticalmenu .menu-heading{
+		border-top-right-radius:3px;
+        border-bottom-right-radius:3px;
+        border-top-left-radius:0;
+        border-bottom-left-radius:0;
+	}
+	.tab-v3.tabs-left > .nav-tabs{
+		float: right;
+	}
+	.tab-v3 > .nav-tabs > li{
+		margin-left: -1px;
+		margin-right: 0;
+	}
+	.header-v4 #pav-megamenu .navbar-nav > li,
+	.header-v4 #pav-megamenu .navbar-nav > li:last-child{
+		border-color:#a1d165;
+	}
+	.list-category{
+	    &.action,
+	    &.boy-toy,
+	    &.girl-toy,
+	    &.doll,
+	    &.preschool,
+	    &.game{
+	        background-position:80% 50%;
+	    }	    
+	    &.highlight{
+	        &.men,
+	        &.ladies,
+	        &.kids,
+	        &.accessories,
+	        &.sport,
+	        &.outdoor{
+	            background-position:right center;
+	        }	        
+	    }
+	}
+}
+.space-left-10 {
+    margin-right: 10px !important;
+}
+@media (max-width: $screen-phone){
+  .rtl #cart-top{
+    float: right !important;
+  }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+.rtl .box-cart{
+		.cart-top .dropdown-menu{
+			left: 0;
+			right:auto;
+		}
+	}
+}
+@media (max-width: $screen-xs-max) {
+.rtl #cart-top{
+		float: right !important;
+	}
+}

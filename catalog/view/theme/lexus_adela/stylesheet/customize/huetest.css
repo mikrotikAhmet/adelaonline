@@ -1,0 +1,104 @@
+
+/* customize for body */ 
+body { 
+background-color:#ff00ff;
+background-image:url(../../image/pattern/pattern2.png) 
+} 
+
+/* customize for body,body #page */ 
+body,body #page { 
+font-family:inherit;
+color:#ff0000 
+} 
+
+/* customize for body a,body #page a */ 
+body a,body #page a { 
+color:#1100ff 
+} 
+
+/* customize for #header-main */ 
+#header-main { 
+background-color:#006aff 
+} 
+
+/* customize for .product-block .name a */ 
+.product-block .name a { 
+color:#fa08fa 
+} 
+
+/* customize for .price .price-new */ 
+.price .price-new { 
+color:#fc00fc 
+} 
+
+/* customize for .price .price-old */ 
+.price .price-old { 
+color:#f0084d 
+} 
+
+/* customize for 
+				.btn.btn-shopping-cart .fa,.product-block .product-icon
+			 */ 
+
+				.btn.btn-shopping-cart .fa,.product-block .product-icon
+			 { 
+color:#006aff 
+} 
+
+/* customize for 
+				.btn.btn-shopping-cart span + span
+			 */ 
+
+				.btn.btn-shopping-cart span + span
+			 { 
+color:#ff00ff 
+} 
+
+/* customize for 
+				.btn.btn-shopping-cart .fa
+			 */ 
+
+				.btn.btn-shopping-cart .fa
+			 { 
+background-color:#00ff11;
+color:#ffb300 
+} 
+
+/* customize for 
+				.btn.btn-shopping-cart span + span,.product-block .product-icon
+			 */ 
+
+				.btn.btn-shopping-cart span + span,.product-block .product-icon
+			 { 
+border-color:#04ff00 
+} 
+
+/* customize for 
+				.product-label
+			 */ 
+
+				.product-label
+			 { 
+border-top-color:#0040ff 
+} 
+
+/* customize for .product-label-special */ 
+.product-label-special { 
+color:#00fcef 
+} 
+
+/* customize for .product-block .pav-colorbox */ 
+.product-block .pav-colorbox { 
+background-color:#fc03fc 
+} 
+
+/* customize for 
+				.product-block .pav-colorbox,.product-block .pav-colorbox .fa,
+				.product-block .pav-colorbox span
+			 */ 
+
+				.product-block .pav-colorbox,.product-block .pav-colorbox .fa,
+				.product-block .pav-colorbox span
+			 { 
+color:#ff001a 
+} 

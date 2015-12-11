@@ -1,0 +1,23 @@
+
+// Links
+a {
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+
+//
+// Buttons
+// --------------------------------------------------
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.carousel-control{
+	color: $carousel-control-color;
+	&:hover,
+    &:focus {
+    @include box-shadow(0 0 0 30px $brand-primary inset);
+    color: $carousel-control-color-hover;
+  }
+}

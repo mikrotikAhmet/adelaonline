@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<topbar>
+		 <title>Topbar Block</title>
+		 <description></description>
+		 <module>
+	 	 	<title>Customer Support</title>
+	 	 	<field>
+	 	 		<name>widget_call</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<img src="image/catalog/call.png" alt=""><b>Customer care</b>: <span> 1800 - 123 456</span>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>Email Support</title>
+	 	 	<field>
+	 	 		<name>widget_email</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<img src="image/catalog/email.png" alt=""><b>Email</b>: <span> support@company.com</span>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>Safe Payment</title>
+	 	 	<field>
+	 	 		<name>widget_payment</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<div class="feature-box  feature-box-v2">
+						    <div class="fbox-icon hidden-sm">
+	                            <img alt="" src="http://localhost/opencart_new/adela/image/catalog/demo/icon/safe.png">
+	                        </div>
+						    <div class="fbox-body">						     
+						        <h4>Safe Payment</h4>
+						        <p>Pay with the world’s most popular and secure payment methods.</p>            
+						    </div>
+						</div>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>Worldwide Delivery</title>
+	 	 	<field>
+	 	 		<name>widget_delivery</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<div class="feature-box  feature-box-v2">
+						    <div class="fbox-icon hidden-sm">
+	                            <img alt="" src="http://localhost/opencart_new/adela/image/catalog/demo/icon/deli.png">
+	                        </div>
+						    <div class="fbox-body">						     
+						        <h4>Worldwide Delivery</h4>
+								<p>With sites in 5 languages, we ship to over 200 countries &amp; regions.</p>            
+							</div>
+						</div>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>24/7 Help Center</title>
+	 	 	<field>
+	 	 		<name>widget_help</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<div class="feature-box noborder feature-box-v2 feature-box-left ">
+						    <div class="fbox-icon hidden-sm">
+	                            <img alt="" src="http://localhost/opencart_new/adela/image/catalog/demo/icon/help.png">
+	                        </div>
+						    <div class="fbox-body">						     
+						        <h4>24/7 Help Center</h4>				   
+								<p>Round-the-clock assistance for a smooth shopping experience.</p>
+							</div>
+						</div>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	</topbar>
+	<div>
+		<title>Footer Center Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Site info</title>
+	 	 	<field>
+	 	 		<name>widget_site_info</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+	 	 			<div class="media">
+				<div class="logo-about">
+						<img alt="icon" src="image/catalog/logo.png">
+				</div>
+
+				<div class="media-body">
+					<div class="ourservice-content">
+						<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					</div>
+					<address>
+					  <span class="text-uppercase black">main office</span><br>
+					  PO Box 16122 Collins Street West Victoria 8007 Australia<br>
+					  +844 123 456 78 / +844 123 456 79<br>
+					  <a href="mailto:#">contact@yourcompany.com</a>
+					</address>
+				</div>
+
+			</div>
+	 	 		]]></default>
+	 		</field>
+	 	 </module>
+	</div>
+	<footer>
+		 <title>Footer Botton Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Logo Payment</title>
+	 	 	<field>
+	 	 		<name>widget_paypal</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[<img src="image/catalog/demo/payment.png" alt="">]]></default>
+	 		</field>
+	 	 </module>
+	</footer>
+</theme>
