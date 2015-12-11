@@ -4,3 +4,9 @@
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+## Config and Htaccess Files
+/.htaccess
+/config.php
+/admin/config.php
+/image
+/image/*
