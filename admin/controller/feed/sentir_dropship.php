@@ -130,6 +130,21 @@ class ControllerFeedSentirDropship extends Controller {
             $data['sentir_dropship_end_point'] = $this->config->get('sentir_dropship_end_point');
         }
 
+        $data['sentir_dropship_categories'] = array();
+
+        $this->load->model('feed/sentir_dropship');
+
+        $results = $this->model_feed_sentir_dropship->getCategories();
+
+        foreach ($results as $result) {
+            $data['sentir_dropship_categories'][] = array(
+                'sentir_dropship_category_id' => $result['sentir_dropship_category_id'],
+                'sentir_dropship_category'    => $result['sentir_dropship_category'],
+                'category_id'             => $result['category_id'],
+                'category'                => $result['category']
+            );
+        }
+
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
         $data['footer'] = $this->load->controller('common/footer');
@@ -659,7 +674,7 @@ class ControllerFeedSentirDropship extends Controller {
         $pagination->total = $category_total;
         $pagination->page = $page;
         $pagination->limit = 10;
-        $pagination->url = $this->url->link('feed/sentir_dropship/category', 'token=' . $this->session->data['token'] . '&page={page}', 'SSL');
+        $pagination->url = $this->url->link('feed/sentir_dropship/categorylocalized', 'token=' . $this->session->data['token'] . '&page={page}', 'SSL');
 
         $data['pagination'] = $pagination->render();
 

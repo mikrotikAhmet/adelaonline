@@ -149,6 +149,7 @@ class ControllerProductCategory extends Controller {
 			}
 
 			$data['categories'] = array();
+            $data['cat_collection'] = array();
 
 			$results = $this->model_catalog_category->getCategories($category_id);
 
@@ -158,18 +159,26 @@ class ControllerProductCategory extends Controller {
 					'filter_sub_category' => true
 				);
 
-                if ($result['image'] && !empty($result['image'])) {
-                    $thumb = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+                if ($result['refine_image'] != null) {
+                    $thumb = $this->model_tool_image->resize($result['refine_image'], 190, 250);
                 } else {
-                    $thumb = $this->model_tool_image->resize(DIR_IMAGE.'placeholder.png', $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+                    $thumb = $this->model_tool_image->resize(DIR_IMAGE.'placeholder.png', 190, 250);
                 }
 
 				$data['categories'][] = array(
 					'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-                    'thumb'=>$thumb,
+                    'refine_thumb'=>$thumb,
 					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
 				);
+
+                $data['cat_collection'][] = $result['category_id'];
+
+
 			}
+
+            $collection = implode(',',$data['cat_collection']);
+
+
 
 			$data['products'] = array();
 
@@ -177,6 +186,7 @@ class ControllerProductCategory extends Controller {
 				'filter_category_id' => $category_id,
 				'filter_filter'      => $filter,
 				'sort'               => $sort,
+                'collection'        => $collection,
 				'order'              => $order,
 				'start'              => ($page - 1) * $limit,
 				'limit'              => $limit

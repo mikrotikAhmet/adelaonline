@@ -1,4 +1,4 @@
-<table class="table table-bordered">
+<!--<table class="table table-bordered">
     <thead>
     <tr>
         <td class="text-left"><?php echo $column_sentir_category; ?></td>
@@ -23,7 +23,7 @@
 <div class="row">
     <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
     <div class="col-sm-6 text-right"><?php echo $results; ?></div>
-</div>
+</div>-->
 <script>
     function setMainCategory(category_id){
         $('#main-category').html(category_id);
@@ -47,7 +47,7 @@
 //                $('#button-category-add').button('reset');
             },
             success: function(html) {
-                $('#category-breadcrumb').html(bread);
+//                $('#category-breadcrumb').html(bread);
                 $('#category-refine').html(html);
                 getProducts(category_id);
             },

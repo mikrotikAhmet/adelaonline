@@ -25,6 +25,7 @@ $_['entry_parent']           = 'Parent';
 $_['entry_filter']           = 'Filters';
 $_['entry_store']            = 'Stores';
 $_['entry_image']            = 'Image';
+$_['entry_refine_image']            = 'Refine Search Image';
 $_['entry_top']              = 'Top';
 $_['entry_column']           = 'Columns';
 $_['entry_sort_order']       = 'Sort Order';

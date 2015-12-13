@@ -61,8 +61,11 @@
                 <div class="col-sm-12">
                     <div class="row">
                         <?php foreach ($categories as $category) { ?>
-                        <div class="col-sm-3">
-                            <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+                        <div class="col-sm-3 text-center">
+                            <a href="<?php echo $category['href']; ?>" class="text-muted">
+                                <img alt="<?php echo $category['name']; ?>" class="img-responsive grayscale" src="<?php echo $category['refine_thumb']?>"/>
+                               <span style="font-size:11px"> <?php echo $category['name']; ?></span>
+                            </a>
                         </div>
                         <?php } ?>
                     </div>
@@ -70,6 +73,7 @@
             </div>
          </div>    
       <?php } ?>
+          <hr/>
       <?php if ($products) { ?>
      
       <?php require( ThemeControlHelper::getLayoutPath( 'common/product_collection.tpl' ) );  ?> 

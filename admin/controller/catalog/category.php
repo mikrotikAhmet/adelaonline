@@ -299,6 +299,7 @@ class ControllerCatalogCategory extends Controller {
 		$data['entry_filter'] = $this->language->get('entry_filter');
 		$data['entry_store'] = $this->language->get('entry_store');
 		$data['entry_image'] = $this->language->get('entry_image');
+        $data['entry_refine_image'] = $this->language->get('entry_refine_image');
 		$data['entry_top'] = $this->language->get('entry_top');
 		$data['entry_column'] = $this->language->get('entry_column');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
@@ -452,6 +453,8 @@ class ControllerCatalogCategory extends Controller {
 			$data['keyword'] = '';
 		}
 
+        $this->load->model('tool/image');
+
 		if (isset($this->request->post['image'])) {
 			$data['image'] = $this->request->post['image'];
 		} elseif (!empty($category_info)) {
@@ -460,7 +463,6 @@ class ControllerCatalogCategory extends Controller {
 			$data['image'] = '';
 		}
 
-		$this->load->model('tool/image');
 
 		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
 			$data['thumb'] = $this->model_tool_image->resize($this->request->post['image'], 100, 100);
@@ -469,6 +471,22 @@ class ControllerCatalogCategory extends Controller {
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
+
+        if (isset($this->request->post['refine_image'])) {
+            $data['refine_image'] = $this->request->post['refine_image'];
+        } elseif (!empty($category_info)) {
+            $data['refine_image'] = $category_info['refine_image'];
+        } else {
+            $data['refine_image'] = '';
+        }
+
+        if (isset($this->request->post['refine_image']) && is_file(DIR_IMAGE . $this->request->post['refine_image'])) {
+            $data['refine_thumb'] = $this->model_tool_image->resize($this->request->post['refine_image'], 100, 100);
+        } elseif (!empty($category_info) && is_file(DIR_IMAGE . $category_info['refine_image'])) {
+            $data['refine_thumb'] = $this->model_tool_image->resize($category_info['refine_image'], 100, 100);
+        } else {
+            $data['refine_thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+        }
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 

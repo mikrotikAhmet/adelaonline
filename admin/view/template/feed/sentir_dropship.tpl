@@ -107,6 +107,14 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div id="category-localized"></div>
+                                <div class="input-group">
+                                    <select name="" id="input-localized-category" class="form-control" onchange="getRefine(this.value,$(this).prop('data-name'));setMainCategory(this.value)">
+                                        <option value="">--Select--</option>
+                                        <?php foreach ($sentir_dropship_categories as $category) { ?>
+                                        <option value="<?php echo $category['sentir_dropship_category_id']?>" data-name="<?php echo str_replace("'","`",$category['sentir_dropship_category']); ?>"><?php echo str_replace("'","`",$category['sentir_dropship_category']); ?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
                                 <br />
                             </div>
                             <div class="col-md-8">

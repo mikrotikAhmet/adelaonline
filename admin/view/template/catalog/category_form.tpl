@@ -147,6 +147,12 @@
                   <input type="hidden" name="image" value="<?php echo $image; ?>" id="input-image" />
                 </div>
               </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><?php echo $entry_refine_image; ?></label>
+                    <div class="col-sm-10"><a href="" id="thumb-refine-image" data-toggle="image" class="img-thumbnail"><img src="<?php echo $refine_thumb; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
+                        <input type="hidden" name="refine_image" value="<?php echo $refine_image; ?>" id="input-refine-image" />
+                    </div>
+                </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-top"><span data-toggle="tooltip" title="<?php echo $help_top; ?>"><?php echo $entry_top; ?></span></label>
                 <div class="col-sm-10">

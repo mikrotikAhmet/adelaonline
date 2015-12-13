@@ -44,4 +44,7 @@
 		</div>
 		<?php } ?>
 		<?php } ?>
+    <?php if ($pagination) { ?>
+    <div class="paging clearfix"><?php echo $pagination; ?></div>
+    <?php } ?>
 </div>

@@ -143,7 +143,12 @@ class ModelCatalogProduct extends Model {
 			$sql .= " AND p.manufacturer_id = '" . (int)$data['filter_manufacturer_id'] . "'";
 		}
 
+        if (!empty($data['collection'])){
+                $sql .=" AND p2c.category_id IN (".$data['collection'].")";
+        }
+
 		$sql .= " GROUP BY p.product_id";
+
 
 		$sort_data = array(
 			'pd.name',
