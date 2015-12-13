@@ -159,7 +159,7 @@ class ModelFeedSentirDropship extends Model {
 
     public function importData($data) {
 
-        /////////////////////////////////////////
+       /////////////////////////////////////////
         //Markup is Here
         $markupPrice = ($data->map * 1) / 100;
 
@@ -211,47 +211,29 @@ class ModelFeedSentirDropship extends Model {
             }
 
             $this->db->query("INSERT INTO " . DB_PREFIX . "product_to_store SET product_id = '" . (int)$product_id . "', store_id = '0'");
-//
-//        if (isset($data['product_attribute'])) {
-//            foreach ($data['product_attribute'] as $product_attribute) {
-//                if ($product_attribute['attribute_id']) {
-//                    foreach ($product_attribute['product_attribute_description'] as $language_id => $product_attribute_description) {
-//                        $this->db->query("INSERT INTO " . DB_PREFIX . "product_attribute SET product_id = '" . (int)$product_id . "', attribute_id = '" . (int)$product_attribute['attribute_id'] . "', language_id = '" . (int)$language_id . "', text = '" .  $this->db->escape($product_attribute_description['text']) . "'");
-//                    }
-//                }
-//            }
-//        }
-//
-//        if (isset($data['product_option'])) {
-//            foreach ($data['product_option'] as $product_option) {
-//                if ($product_option['type'] == 'select' || $product_option['type'] == 'radio' || $product_option['type'] == 'checkbox' || $product_option['type'] == 'image') {
-//                    if (isset($product_option['product_option_value'])) {
-//                        $this->db->query("INSERT INTO " . DB_PREFIX . "product_option SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$product_option['option_id'] . "', required = '" . (int)$product_option['required'] . "'");
-//
-//                        $product_option_id = $this->db->getLastId();
-//
-//                        foreach ($product_option['product_option_value'] as $product_option_value) {
-//                            $this->db->query("INSERT INTO " . DB_PREFIX . "product_option_value SET product_option_id = '" . (int)$product_option_id . "', product_id = '" . (int)$product_id . "', option_id = '" . (int)$product_option['option_id'] . "', option_value_id = '" . (int)$product_option_value['option_value_id'] . "', quantity = '" . (int)$product_option_value['quantity'] . "', subtract = '" . (int)$product_option_value['subtract'] . "', price = '" . (float)$product_option_value['price'] . "', price_prefix = '" . $this->db->escape($product_option_value['price_prefix']) . "', points = '" . (int)$product_option_value['points'] . "', points_prefix = '" . $this->db->escape($product_option_value['points_prefix']) . "', weight = '" . (float)$product_option_value['weight'] . "', weight_prefix = '" . $this->db->escape($product_option_value['weight_prefix']) . "'");
-//                        }
-//                    }
-//                } else {
-//                    $this->db->query("INSERT INTO " . DB_PREFIX . "product_option SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$product_option['option_id'] . "', value = '" . $this->db->escape($product_option['value']) . "', required = '" . (int)$product_option['required'] . "'");
-//                }
-//            }
-//        }
-//
-//        if (isset($data['product_discount'])) {
-//            foreach ($data['product_discount'] as $product_discount) {
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_discount SET product_id = '" . (int)$product_id . "', customer_group_id = '" . (int)$product_discount['customer_group_id'] . "', quantity = '" . (int)$product_discount['quantity'] . "', priority = '" . (int)$product_discount['priority'] . "', price = '" . (float)$product_discount['price'] . "', date_start = '" . $this->db->escape($product_discount['date_start']) . "', date_end = '" . $this->db->escape($product_discount['date_end']) . "'");
-//            }
-//        }
-//
-//        if (isset($data['product_special'])) {
-//            foreach ($data['product_special'] as $product_special) {
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_special SET product_id = '" . (int)$product_id . "', customer_group_id = '" . (int)$product_special['customer_group_id'] . "', priority = '" . (int)$product_special['priority'] . "', price = '" . (float)$product_special['price'] . "', date_start = '" . $this->db->escape($product_special['date_start']) . "', date_end = '" . $this->db->escape($product_special['date_end']) . "'");
-//            }
-//        }
-//
+
+
+            $this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'product_id=" . (int)$product_id . "', keyword = '" . $this->db->escape($data->model) . "'");
+
+        if (isset($data->product_option)) {
+            foreach ($data->product_option as $product_option) {
+
+                if ($product_option->type == 'select' || $product_option->type == 'radio' || $product_option->type == 'checkbox' || $product_option->type == 'image') {
+                    if (isset($product_option->product_option_value)) {
+                        $this->db->query("INSERT INTO " . DB_PREFIX . "product_option SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$this->checkOptionByName($product_option->type,$product_option->name) . "', required = '" . (int)$product_option->required . "'");
+
+                        $product_option_id = $this->db->getLastId();
+
+                        foreach ($product_option->product_option_value as $product_option_value) {
+                            $this->db->query("INSERT INTO " . DB_PREFIX . "product_option_value SET product_option_id = '" . (int)$product_option_id . "', product_id = '" . (int)$product_id . "', option_id = '" . (int)$this->checkOptionByName($product_option->type,$product_option->name). "', option_value_id = '" . (int)$this->checkOptionValueByName($this->checkOptionByName($product_option->type,$product_option->name),$product_option_value->name) . "', quantity = '" . (int)$product_option_value->quantity . "', subtract = '" . (int)$product_option_value->subtract . "', price = '" . (float)$product_option_value->price . "', price_prefix = '" . $this->db->escape($product_option_value->price_prefix) . "', points = '" . (int)$product_option_value->points . "', points_prefix = '" . $this->db->escape($product_option_value->points_prefix) . "', weight = '" . (float)$product_option_value->weight . "', weight_prefix = '" . $this->db->escape($product_option_value->weight_prefix) . "'");
+                        }
+                    }
+                } else {
+                    $this->db->query("INSERT INTO " . DB_PREFIX . "product_option SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$this->checkOptionByName($product_option->type,$product_option->name) . "', value = '" . $this->db->escape($product_option->value) . "', required = '" . (int)$product_option->required . "'");
+                }
+            }
+        }
+
         if (isset($data->product_images->images)) {
             foreach ($data->product_images->images as $product_image) {
 
@@ -264,57 +246,13 @@ class ModelFeedSentirDropship extends Model {
                 $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($imagename) . "', sort_order = '" . (int)$product_image->sort_order . "'");
             }
         }
-//
-//        if (isset($data['product_download'])) {
-//            foreach ($data['product_download'] as $download_id) {
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_to_download SET product_id = '" . (int)$product_id . "', download_id = '" . (int)$download_id . "'");
-//            }
-//        }
-//
+
             if (isset($data->product_category)) {
                 foreach ($data->product_category as $category_id) {
                     $this->db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET product_id = '" . (int)$product_id . "', category_id = '" . (int)$category_id . "'");
                 }
             }
-//
-//        if (isset($data['product_filter'])) {
-//            foreach ($data['product_filter'] as $filter_id) {
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_filter SET product_id = '" . (int)$product_id . "', filter_id = '" . (int)$filter_id . "'");
-//            }
-//        }
-//
-//        if (isset($data['product_related'])) {
-//            foreach ($data['product_related'] as $related_id) {
-//                $this->db->query("DELETE FROM " . DB_PREFIX . "product_related WHERE product_id = '" . (int)$product_id . "' AND related_id = '" . (int)$related_id . "'");
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_related SET product_id = '" . (int)$product_id . "', related_id = '" . (int)$related_id . "'");
-//                $this->db->query("DELETE FROM " . DB_PREFIX . "product_related WHERE product_id = '" . (int)$related_id . "' AND related_id = '" . (int)$product_id . "'");
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_related SET product_id = '" . (int)$related_id . "', related_id = '" . (int)$product_id . "'");
-//            }
-//        }
-//
-//        if (isset($data['product_reward'])) {
-//            foreach ($data['product_reward'] as $customer_group_id => $product_reward) {
-//                if ((int)$product_reward['points'] > 0) {
-//                    $this->db->query("INSERT INTO " . DB_PREFIX . "product_reward SET product_id = '" . (int)$product_id . "', customer_group_id = '" . (int)$customer_group_id . "', points = '" . (int)$product_reward['points'] . "'");
-//                }
-//            }
-//        }
-//
-//        if (isset($data['product_layout'])) {
-//            foreach ($data['product_layout'] as $store_id => $layout_id) {
-//                $this->db->query("INSERT INTO " . DB_PREFIX . "product_to_layout SET product_id = '" . (int)$product_id . "', store_id = '" . (int)$store_id . "', layout_id = '" . (int)$layout_id . "'");
-//            }
-//        }
-//
-//        if (isset($data['keyword'])) {
-//            $this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'product_id=" . (int)$product_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
-//        }
-//
-//        if (isset($data['product_recurrings'])) {
-//            foreach ($data['product_recurrings'] as $recurring) {
-//                $this->db->query("INSERT INTO `" . DB_PREFIX . "product_recurring` SET `product_id` = " . (int)$product_id . ", customer_group_id = " . (int)$recurring['customer_group_id'] . ", `recurring_id` = " . (int)$recurring['recurring_id']);
-//            }
-//        }
+
 
             $this->cache->delete('product');
 
@@ -332,6 +270,42 @@ class ModelFeedSentirDropship extends Model {
 //
 //        print_r($array);
 //    }
+
+    public function checkOptionByName($optionType,$optionName){
+
+        $result =  $this->db->query("SELECT * FROM ".DB_PREFIX."option_description WHERE name = '".$this->db->escape($optionName)."'");
+
+        if ($result->row){
+            return $result->row['option_id'];
+        } else {
+            $this->db->query("INSERT INTO ".DB_PREFIX."option SET type='".$this->db->escape($optionType)."'");
+
+
+            $option_id = $this->db->getLastId();
+
+            $this->db->query("INSERT INTO ".DB_PREFIX."option_description SET language_id='".$this->db->escape($this->config->get('config_language_id'))."',option_id = '".(int)$option_id."',name='".$this->db->escape($optionName)."'");
+
+            return $option_id;
+        }
+    }
+
+    public function checkOptionValueByName($optionId,$optionValueName){
+
+        $result =  $this->db->query("SELECT * FROM ".DB_PREFIX."option_value_description WHERE name = '".$this->db->escape($optionValueName)."' AND option_id = '".(int) $optionId."'");
+
+        if ($result->row){
+            return $result->row['option_value_id'];
+        } else {
+            $this->db->query("INSERT INTO ".DB_PREFIX."option_value SET option_id='".(int)$optionId."'");
+
+
+            $option_value_id = $this->db->getLastId();
+
+            $this->db->query("INSERT INTO ".DB_PREFIX."option_value_description SET option_value_id = '".(int) $option_value_id."',language_id='".$this->db->escape($this->config->get('config_language_id'))."',option_id = '".(int)$optionId."',name='".$this->db->escape($optionValueName)."'");
+
+            return $option_value_id;
+        }
+    }
 
     public function checkProduct($model){
 
