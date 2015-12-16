@@ -51,6 +51,11 @@ class ModelFeedSentirDropship extends Model {
         }
     }
 
+    public function updateInventoryUrl($url,$id){
+
+        $this->db->query("UPDATE ".DB_PREFIX."sentir_dropship_inventory SET productUrl = '".$this->db->escape($url)."' WHERE product_id = '".(int) $id."'");
+    }
+
     public function getSentirDropshipCategories($data = array()) {
         $sql = "SELECT * FROM `" . DB_PREFIX . "sentir_dropship_category` WHERE name LIKE '%" . $this->db->escape($data['filter_name']) . "%' ORDER BY name ASC";
 

@@ -357,41 +357,5 @@
     $('#inventorylist').load('index.php?route=feed/sentir_dropship/getInventory&token=<?php echo $token; ?>');
 
     //--></script>
-<!--script>
-    $(function(){
-
-        var current_effect =  'bounce';
-
-        $('#waitMe_ex').click(function(){
-            run_waitMe(current_effect);
-        });
-        $('#waitMe_ex_close').click(function(){
-            $('.containerBlock > form').waitMe('hide');
-        });
-
-        $('#waitMe_ex_effect').change(function(){
-            current_effect = $(this).val();
-            run_waitMe(current_effect);
-        });
-
-        $('#waitMe_ex_effect').click(function(){
-            current_effect = $(this).val();
-        });
-
-        function run_waitMe(effect){
-            $('.containerBlock > form').waitMe({
-                effect: effect,
-                text: 'Please wait...',
-                bg: 'rgba(255,255,255,0.7)',
-                color:'#000',
-                sizeW:'',
-                sizeH:'',
-                source: 'img.svg',
-                onClose: function() {}
-            });
-        }
-
-    });
-</script-->
 </div>
 <?php echo $footer; ?>

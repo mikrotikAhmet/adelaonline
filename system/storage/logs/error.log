@@ -1318,3 +1318,290 @@
 2015-12-16 12:48:51 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
 2015-12-16 12:48:52 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
 2015-12-16 13:07:17 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 15:10:19 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 15:29:17 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 15:29:17 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 15:29:22 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 16:07:27 - PHP Notice:  Undefined property: stdClass::$productUrl in /var/www/html/adelaonline/admin/view/template/feed/sentir_dropship_products.tpl on line 17
+2015-12-16 16:35:09 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 328
+2015-12-16 16:35:09 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 338
+2015-12-16 16:35:09 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/model/feed/sentir_dropship.php on line 49
+2015-12-16 16:37:40 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 328
+2015-12-16 16:37:40 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 338
+2015-12-16 16:37:40 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/model/feed/sentir_dropship.php on line 49
+2015-12-16 16:38:18 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 328
+2015-12-16 16:38:18 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 338
+2015-12-16 16:38:18 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/model/feed/sentir_dropship.php on line 49
+2015-12-16 16:41:48 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 16:41:57 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 328
+2015-12-16 16:41:57 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 338
+2015-12-16 16:41:57 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/model/feed/sentir_dropship.php on line 49
+2015-12-16 16:43:50 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 328
+2015-12-16 16:43:50 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 338
+2015-12-16 16:43:50 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/model/feed/sentir_dropship.php on line 49
+2015-12-16 17:11:01 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/view/template/feed/sentir_dropship_inventory.tpl on line 11
+2015-12-16 17:11:20 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/view/template/feed/sentir_dropship_inventory.tpl on line 11
+2015-12-16 17:11:46 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/view/template/feed/sentir_dropship_inventory.tpl on line 11
+2015-12-16 17:20:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:12 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:12 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:12 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:13 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:13 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:13 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:13 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:13 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:13 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:14 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:14 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:14 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:14 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:14 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:14 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:15 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:15 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:15 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:15 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:15 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:20:15 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = '' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:59 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:20:59 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:21:00 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:34 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:34 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:34 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:35 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:35 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:35 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:36 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:36 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:37 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:37 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:37 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:38 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:38 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:22:38 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'http://' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:54 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:58 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:59 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:25:59 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:52 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78959' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:52 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79312' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:53 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78912' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:53 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79070' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:53 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78979' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:54 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79602' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:54 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79214' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:54 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79363' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:54 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79199' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78938' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78934' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:55 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79113' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79146' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '78796' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:56 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79221' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:27:57 - PHP Notice:  Error: Table 'adela.oc_dropship_inventory' doesn't exist<br />Error No: 1146<br />UPDATE oc_dropship_inventory SET productUrl = 'TEST' WHERE product_id = '79177' in /var/www/html/adelaonline/system/library/db/mysqli.php on line 41
+2015-12-16 17:29:17 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:17 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:17 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:18 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:19 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:19 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:20 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:20 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:20 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:21 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:21 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:21 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:22 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:22 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:22 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:22 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:23 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:29:23 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:07 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:07 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:08 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:08 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:08 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:09 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:09 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:09 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:10 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:10 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:10 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:11 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:11 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:11 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:12 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:13 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:30:13 - PHP Notice:  Undefined property: stdClass::$external_url in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 440
+2015-12-16 17:36:43 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 17:37:29 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 17:37:32 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 17:57:16 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 17:57:16 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 17:58:36 - PHP Notice:  Trying to get property of non-object in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 17:58:36 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 236
+2015-12-16 18:43:35 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/data.txt): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:43:59 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/data.txt): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:45:17 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/data.json): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:46:33 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/data.json): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:49:10 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/productIDs.json): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:49:10 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 242
+2015-12-16 18:49:10 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 243
+2015-12-16 18:50:09 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/productIDs.json): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:50:09 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 242
+2015-12-16 18:50:09 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 243
+2015-12-16 18:51:47 - PHP Warning:  fopen(/var/www/html/adelaonline/system/productIDs.json): failed to open stream: Permission denied in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 18:51:47 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 242
+2015-12-16 18:51:47 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 243
+2015-12-16 19:03:19 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:05:29 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:06:06 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:29:29 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:34:39 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:35:48 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:36:17 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:36:21 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:40:14 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:46:58 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:47:03 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:47:08 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:47:13 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:47:16 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:47:44 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:49:29 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:49:56 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 19:51:21 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:51:21 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:51:57 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:51:57 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:53:41 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:53:41 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:53:46 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:53:46 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:54:29 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:54:29 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:55:30 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:55:30 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:55:58 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:55:58 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:56:27 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:56:27 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:03 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:03 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:06 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:06 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:28 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:57:28 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:58:01 - PHP Warning:  include_once(/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php): failed to open stream: Permission denied in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 19:58:01 - PHP Warning:  include_once(): Failed opening '/var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/adelaonline/system/engine/action.php on line 39
+2015-12-16 20:00:11 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:00:23 - PHP Warning:  fopen(/var/www/html/adelaonline/system/shell/data.json): failed to open stream: No such file or directory in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 241
+2015-12-16 20:02:04 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:02:09 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:02:12 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:02:22 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:05:38 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:05:53 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:06:43 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:07:16 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:07:34 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:08:27 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:09:12 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:09:17 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:09:20 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:09:23 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:09:25 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:09:26 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:12:23 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:12:55 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:14:11 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:15:01 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 20:15:55 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:09 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:21 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:23 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:25 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:28 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:36 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:16:54 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:17:13 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:25:37 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:25:42 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:25:44 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:25:46 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:25:48 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:27:41 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:27:43 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:29:55 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:29:59 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:30:55 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:30:57 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:31:01 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:32:14 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:32:15 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:32:17 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:32:18 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:32:20 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:33:16 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:33:21 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:35:32 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:35:34 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:35:38 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:47:37 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:47:41 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:47:47 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:47:51 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:47:57 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:48:01 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:48:10 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:48:21 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:58:10 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 20:58:14 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:00:30 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:00:31 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:00:33 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:00:34 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:00:36 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:01:07 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:01:10 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:01:11 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:01:12 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:10:35 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 21:11:02 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 21:11:45 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 21:13:45 - PHP Notice:  Use of undefined constant DIR_SHELL - assumed 'DIR_SHELL' in /var/www/html/adelaonline/admin/controller/feed/sentir_dropship.php on line 247
+2015-12-16 21:19:05 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:07 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:10 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:11 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:13 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:27 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129
+2015-12-16 21:19:35 - PHP Notice:  Undefined variable: template_layout in /var/www/html/adelaonline/catalog/view/theme/lexus_adela/template/common/header.tpl on line 129

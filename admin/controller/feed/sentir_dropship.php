@@ -233,16 +233,31 @@ class ControllerFeedSentirDropship extends Controller {
 
         $res = json_decode($obj);
 
-        foreach ($res->ProductsObj as $product){
+//        foreach ($res->ProductsObj as $product){
 
-            $this->model_feed_sentir_dropship->importData($product);
-        }
+//            $this->model_feed_sentir_dropship->importData($product);
+//        }
 
-        $json[] = $obj;
+        $fp = fopen(DIR_SYSTEM.'storage/upload/products.json', 'w');
+        fwrite($fp, $obj);
+        fclose($fp);
+
+        $json[] = $res;
+
+        $this->execInBackground('php /var/www/html/adelaonline/shell/sentir.php products.json');
 
         $this->response->addHeader('Content-Type: application/json');
         $this->response->setOutput(json_encode($json));
 
+    }
+
+    protected function execInBackground($cmd) {
+        if (substr(php_uname(), 0, 7) == "Windows"){
+            pclose(popen("start /B ". $cmd, "r"));
+        }
+        else {
+            exec($cmd . " > /dev/null &");
+        }
     }
 
     public function refine(){

@@ -46,7 +46,6 @@
                 if (this.checked){
                     matches.push(this.value);
                 }
-//            $('#p'+this.value).attr('disabled',true);
             });
 
 
@@ -57,7 +56,6 @@
                 if (!this.checked){
                     matches.push(this.value);
                 }
-//            $('#p'+this.value).attr('disabled',true);
             });
         }
 
