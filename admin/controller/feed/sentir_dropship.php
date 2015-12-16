@@ -11,6 +11,10 @@ class ControllerFeedSentirDropship extends Controller {
     private $product_selection = array();
 
     public function index() {
+
+        $this->document->addStyle('view/javascript/jquery/waitme/waitMe.css');
+        $this->document->addScript('view/javascript/jquery/waitme/waitMe.js');
+
         $this->load->language('feed/sentir_dropship');
 
         $this->document->setTitle($this->language->get('heading_title'));

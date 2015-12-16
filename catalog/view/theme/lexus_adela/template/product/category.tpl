@@ -61,7 +61,7 @@
                 <div class="col-sm-12">
                     <div class="row">
                         <?php foreach ($categories as $category) { ?>
-                        <div class="col-sm-3 text-center">
+                        <div class="col-sm-2 text-center" style="height: 265px">
                             <a href="<?php echo $category['href']; ?>" class="text-muted">
                                 <img alt="<?php echo $category['name']; ?>" class="img-responsive grayscale" src="<?php echo $category['refine_thumb']?>"/>
                                <span style="font-size:11px"> <?php echo $category['name']; ?></span>

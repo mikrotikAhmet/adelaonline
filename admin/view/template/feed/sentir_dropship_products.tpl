@@ -1,49 +1,32 @@
-        <?php if (isset($products->ProductObj)) { ?>
-        <table class="table table-condensed table-responsive">
-            <thead>
-            <tr>
-                <td style="width: 1px;" class="text-center"><input class="selection" type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
-                <th>Name</th>
-                <th>Image</th>
-                <th>Source Category ID</th>
-                <th><b>S</b>KU / <b>M</b>odel</th>
-                <th>MAP</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php foreach ($products->ProductObj as $product) { ?>
-            <tr>
-                <td class="text-center"><?php if (in_array($product->product_id, $selected)) { ?>
-                    <input id="p<?php echo $product->product_id?>" type="checkbox" class="selection" name="selected[]" value="<?php echo $product->product_id; ?>" checked="checked"/>
-                    <?php } else { ?>
-                    <input id="p<?php echo $product->product_id?>" type="checkbox" class="selection" name="selected[]" value="<?php echo $product->product_id; ?>" />
-                    <?php } ?></td>
-                <td class="text-left"><?php echo $product->name?></td>
-                <td class="text-center"><?php if ($product->image) { ?>
-                    <img src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>" class="img-thumbnail" style="width: 40px"/>
-                    <?php } else { ?>
-                    <span class="img-thumbnail list"><i class="fa fa-camera fa-2x"></i></span>
-                    <?php } ?>
-                </td>
-                <td><?php echo $product->category_id?></td>
-                <td class="text-left"><?php echo (!empty($product->sku) ? 'S'.$product->sku : 'M'.$product->model)?></td>
-                <td class="text-left"><?php echo $currency->format($product->map,$product->base_currency)?></td>
-            </tr>
-            <?php } ?>
-            </tbody>
-        </table>
-        <div class="row">
-            <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-            <div class="col-sm-6 text-right"><?php echo $results; ?></div>
-        </div>
-        <?php } ?>
+<?php if (isset($products->ProductObj)) { ?>
+<h3><i class="fa fa-list"></i> Product List</h3>
+<hr/>
+<div class="row">
+    <div class="col-sm-12">
+        <?php foreach ($products->ProductObj as $product) { ?>
+            <div class="col-sm-2" style="margin-bottom: 10px">
+                <img src="<?php echo $product->image; ?>" alt="<?php echo $product->name; ?>" class="img-thumbnail img-responsive"/>
+                <div>
+                    <span id="sku" class="pull-left">
+                        <?php if (in_array($product->product_id, $selected)) { ?>
+                        <input id="p<?php echo $product->product_id?>" type="checkbox" class="selection" name="selected[]" value="<?php echo $product->product_id; ?>" checked="checked"/>
+                        <?php } else { ?>
+                        <input id="p<?php echo $product->product_id?>" type="checkbox" class="selection" name="selected[]" value="<?php echo $product->product_id; ?>" />
+                        <?php } ?>
+                        <b>SKU:</b> <?php echo (!empty($product->sku) ? 'S'.$product->sku : 'M'.$product->model)?>
+                    </span>
+                    <span id="price" class="pull-right"><b>Price :</b> <?php echo $currency->format($product->map,$product->base_currency)?></span>
+                </div>
+            </div>
+        <?php }?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
+    <div class="col-sm-6 text-right"><?php echo $results; ?></div>
+</div>
+<?php } ?>
 <script>
-
-    $('.img-thumbnail').hover(function(){
-        $(this).addClass('transition');
-    },function(){
-        $(this).removeClass('transition');
-    });
 
     $(".selection:checked").each(function() {
 //        $('#p'+this.value).attr('disabled',true);
