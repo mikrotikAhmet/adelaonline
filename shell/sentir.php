@@ -220,6 +220,12 @@ function updateProduct($data=array(),$model){
     $db->query("UPDATE " . DB_PREFIX . "product SET
         price = '" . (float)$data['price'] . "',
         date_modified = NOW() WHERE model = '".$db->escape($model)."'");
+
+    if (isset($data['product_category'])) {
+        foreach ($data['product_category'] as $category_id) {
+            $db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET model = '" . (int)$model . "', category_id = '" . (int)$category_id . "'");
+        }
+    }
 }
 
 
