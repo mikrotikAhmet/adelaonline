@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c09a0a5-1ba5-4cf4-940f-322405f2e303" name="Default" comment="" />
+    <list default="true" id="9c09a0a5-1ba5-4cf4-940f-322405f2e303" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/cache/cache.currency.1450303230" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/cache/cache.language.1450304345" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/cache/cache.order_status.1.1450304329" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/system/storage/cache/cache.store.1450305113" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/extraction/cookie.txt" afterPath="$PROJECT_DIR$/admin/extraction/cookie.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell/extraction/cookie.txt" afterPath="$PROJECT_DIR$/shell/extraction/cookie.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/storage/logs/error.log" afterPath="$PROJECT_DIR$/system/storage/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/extraction/last.html" afterPath="$PROJECT_DIR$/admin/extraction/last.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell/extraction/last.html" afterPath="$PROJECT_DIR$/shell/extraction/last.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/storage/upload/products.json" afterPath="$PROJECT_DIR$/system/storage/upload/products.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell/sentir.php" afterPath="$PROJECT_DIR$/shell/sentir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="adelaonline.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,28 +37,7 @@
     <favorites_list name="adelaonline" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sentir.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shell/sentir.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5813953" vertical-offset="2700" max-vertical-offset="4800">
-              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-              <folding>
-                <marker date="1450340492131" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-                <marker date="1450340492131" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
-                <marker date="1450340492131" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
-                <marker date="1450340492131" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
-                <marker date="1450340492131" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
-                <marker date="1450340492131" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
-                <marker date="1450340492131" expanded="true" signature="7701:7800" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-                <marker date="1450340492131" expanded="false" signature="9506:9532" placeholder="..." />
-                <marker date="1450340492131" expanded="false" signature="9577:9596" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -195,7 +187,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -204,7 +196,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25261998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25261998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,18 +265,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shell/sentir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5813953" vertical-offset="2700" max-vertical-offset="4800">
-          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5481728" vertical-offset="2700" max-vertical-offset="4680">
+          <caret line="222" column="0" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding>
-            <marker date="1450340492131" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-            <marker date="1450340492131" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
-            <marker date="1450340492131" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
-            <marker date="1450340492131" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
-            <marker date="1450340492131" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
-            <marker date="1450340492131" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
-            <marker date="1450340492131" expanded="true" signature="7701:7800" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-            <marker date="1450340492131" expanded="false" signature="9506:9532" placeholder="..." />
-            <marker date="1450340492131" expanded="false" signature="9577:9596" placeholder="..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450342811859" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+            <marker date="1450342811859" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1450342811859" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>

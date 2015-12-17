@@ -143,10 +143,10 @@ foreach ($package->ProductsObj as $product){
         'product_image'=>$Pictures,
     );
 
-    if ($data && !checkProductByModel($ProductSKU,$ProductSKU)){
+    if (!checkProductByModel(stripAlpha($ProductSKU))){
         addProduct($data);
     } else {
-        updateProduct($data,$ProductSKU);
+        updateProduct($data,stripAlpha($ProductSKU));
     }
 
     repairProducts();
@@ -220,27 +220,19 @@ function updateProduct($data=array(),$model){
     $db->query("UPDATE " . DB_PREFIX . "product SET
         price = '" . (float)$data['price'] . "',
         date_modified = NOW() WHERE model = '".$db->escape($model)."'");
-
-    $product_id = $db->query("SELECT product_id FROM ".DB_PREFIX."product WHERE model = '".$db->escape($model)."' LIMIT 1");
-
-    if (isset($data['product_category'])) {
-        foreach ($data['product_category'] as $category_id) {
-            $db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET product_id = '" . (int)$product_id->row['product_id'] . "', category_id = '" . (int)$category_id . "'");
-        }
-    }
 }
 
 
-function checkProductByModel($model,$sku){
+function checkProductByModel($model){
 
     global $db;
 
-    $result = $db->query("SELECT * FROM ".DB_PREFIX."product WHERE model = '".$db->escape($model)."' OR sku = '".(int)$sku."'");
+    $result = $db->query("SELECT * FROM ".DB_PREFIX."product WHERE model = '".$db->escape($model)."'");
 
     if ($result->row){
-        return true;
+        return 1;
     } else {
-        return false;
+        return 0;
     }
 }
 
