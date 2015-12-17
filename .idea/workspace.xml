@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c09a0a5-1ba5-4cf4-940f-322405f2e303" name="Default" comment="" />
+    <list default="true" id="9c09a0a5-1ba5-4cf4-940f-322405f2e303" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell/sentir.php" afterPath="$PROJECT_DIR$/shell/sentir.php" />
+    </list>
     <ignored path="adelaonline.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,19 +30,24 @@
       <file leaf-file-name="sentir.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shell/sentir.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49833888" vertical-offset="2790" max-vertical-offset="4770">
-              <caret line="225" column="101" selection-start-line="225" selection-start-column="101" selection-end-line="225" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.53156143" vertical-offset="2790" max-vertical-offset="4800">
+              <caret line="227" column="128" selection-start-line="227" selection-start-column="128" selection-end-line="227" selection-end-column="128" />
               <folding>
-                <marker date="1450338951023" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-                <marker date="1450338951023" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="7310:7435" placeholder="INSERT INTO ..." />
-                <marker date="1450338951023" expanded="true" signature="7546:7645" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-                <marker date="1450338951023" expanded="false" signature="9351:9377" placeholder="..." />
-                <marker date="1450338951023" expanded="false" signature="9422:9441" placeholder="..." />
+                <marker date="1450339858075" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+                <marker date="1450339858075" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="7210:7232" placeholder="SELECT produ..." />
+                <marker date="1450339858075" expanded="true" signature="7210:7233" placeholder="SELECT produ..DB_PREFIX..." />
+                <marker date="1450339858075" expanded="true" signature="7210:7293" placeholder="SELECT produ..DB_PREFIXproduct..." />
+                <marker date="1450339858075" expanded="true" signature="7210:7301" placeholder="SELECT produ..DB_PREFIXproduct..." />
+                <marker date="1450339858075" expanded="true" signature="7436:7503" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="7436:7590" placeholder="INSERT INTO ..." />
+                <marker date="1450339858075" expanded="true" signature="7701:7800" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+                <marker date="1450339858075" expanded="false" signature="9506:9532" placeholder="..." />
+                <marker date="1450339858075" expanded="false" signature="9577:9596" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -274,19 +281,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shell/sentir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49833888" vertical-offset="2790" max-vertical-offset="4770">
-          <caret line="225" column="101" selection-start-line="225" selection-start-column="101" selection-end-line="225" selection-end-column="101" />
+        <state vertical-scroll-proportion="0.53156143" vertical-offset="2790" max-vertical-offset="4800">
+          <caret line="227" column="128" selection-start-line="227" selection-start-column="128" selection-end-line="227" selection-end-column="128" />
           <folding>
-            <marker date="1450338951023" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-            <marker date="1450338951023" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="7310:7435" placeholder="INSERT INTO ..." />
-            <marker date="1450338951023" expanded="true" signature="7546:7645" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
-            <marker date="1450338951023" expanded="false" signature="9351:9377" placeholder="..." />
-            <marker date="1450338951023" expanded="false" signature="9422:9441" placeholder="..." />
+            <marker date="1450339858075" expanded="true" signature="4436:4515" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+            <marker date="1450339858075" expanded="true" signature="4762:5226" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="5551:6026" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="6159:6285" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="6432:6632" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="6783:6918" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="7210:7232" placeholder="SELECT produ..." />
+            <marker date="1450339858075" expanded="true" signature="7210:7233" placeholder="SELECT produ..DB_PREFIX..." />
+            <marker date="1450339858075" expanded="true" signature="7210:7293" placeholder="SELECT produ..DB_PREFIXproduct..." />
+            <marker date="1450339858075" expanded="true" signature="7210:7301" placeholder="SELECT produ..DB_PREFIXproduct..." />
+            <marker date="1450339858075" expanded="true" signature="7436:7503" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="7436:7590" placeholder="INSERT INTO ..." />
+            <marker date="1450339858075" expanded="true" signature="7701:7800" placeholder="SELECT * FRO..DB_PREFIXproduct..." />
+            <marker date="1450339858075" expanded="false" signature="9506:9532" placeholder="..." />
+            <marker date="1450339858075" expanded="false" signature="9577:9596" placeholder="..." />
           </folding>
         </state>
       </provider>

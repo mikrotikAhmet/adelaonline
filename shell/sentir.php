@@ -221,9 +221,11 @@ function updateProduct($data=array(),$model){
         price = '" . (float)$data['price'] . "',
         date_modified = NOW() WHERE model = '".$db->escape($model)."'");
 
+    $product_id = $db->query("SELECT product_id FROM ".DB_PREFIX."product WHERE model = '".$db->escape($model)."' LIMIT 1");
+
     if (isset($data['product_category'])) {
         foreach ($data['product_category'] as $category_id) {
-            $db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET model = '" . (int)$model . "', category_id = '" . (int)$category_id . "'");
+            $db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET product_id = '" . (int)$product_id->row['product_id'] . "', category_id = '" . (int)$category_id . "'");
         }
     }
 }
